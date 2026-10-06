@@ -14,23 +14,23 @@
 
 # Bug 3 - bug3.py
 **AI Diagnosis**: Claude: The problem is that `input()` always returns a string, but the code treats the result as a number.  
-**Suggested Fix**: Convert the input to an integer when you read it. E.g. `user_age = int(input("Enter you age: "))`    
+**Suggested Fix**: Convert the input to an integer when you read it. E.g. `user_age = int(input("Enter your age: "))`    
 **Alternative Fixes Tested**: None  
-**Result**: Code worked without any errors.  
+**Result**: Code ran successfully without any errors.  
 
-# Bug 4 - bug4.py
+# Bug 4 - bug4.js
+**AI Diagnosis**: Claude: The problem is an off-by-one error in the loop condition, so the last item never gets printed.     
+**Suggested Fix**: Use `<=` so the loop includes the last index. Or, more idiomatically, compare against the length directly and drop `lastIndex` altogether.     
+**Alternative Fixes Tested**: Tested comparing against the length directly, which was successful.    
+**Result**: Both suggested fixes were successful. Also, Claude was the only model to pick up on an issue where the code doesn't generate an error yet prints the incorrect output due to the indexing.  
+
+# Bug 5 - bug5.js
 **AI Diagnosis**: Text  
 **Suggested Fix**: Text  
 **Alternative Fixes Tested**: Text  
 **Result**: Text  
 
-# Bug 5 - bug5.py
-**AI Diagnosis**: Text  
-**Suggested Fix**: Text  
-**Alternative Fixes Tested**: Text  
-**Result**: Text  
-
-# Bug 6 - bug6.py
+# Bug 6 - bug6.sql
 **AI Diagnosis**: Text  
 **Suggested Fix**: Text  
 **Alternative Fixes Tested**: Text  
