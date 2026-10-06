@@ -8,9 +8,9 @@ def calculate_average(numbers):
     for number in numbers:
         total += number
 
-    average = total / len(numbers
+    average = total / len(numbers)
     return average
 
 
 scores = [75, 82, 91, 68, 88]
-print(calculate_average(scores))
+print(calculate_average(scores)
