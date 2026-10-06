@@ -1,4 +1,4 @@
-> [!NOTE] All code snippets were passed through Claude, ChatGPT and Gemini for comparison. The best reponse is included in the logs below.  
+> **NOTE**: All code snippets were passed through Claude, ChatGPT and Gemini for comparison. The best reponse is included in the logs below.  
 
 # Bug 1 - bug1.py
 **AI Diagnosis**: Text  
