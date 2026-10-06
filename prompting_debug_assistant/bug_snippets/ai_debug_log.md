@@ -13,10 +13,10 @@
 **Result**: Code fixed by adding the division inside the function (as suggested).  
 
 # Bug 3 - bug3.py
-**AI Diagnosis**: Text  
-**Suggested Fix**: Text  
-**Alternative Fixes Tested**: Text  
-**Result**: Text  
+**AI Diagnosis**: Claude: The problem is that `input()` always returns a string, but the code treats the result as a number.  
+**Suggested Fix**: Convert the input to an integer when you read it. E.g. `user_age = int(input("Enter you age: "))`    
+**Alternative Fixes Tested**: None  
+**Result**: Code worked without any errors.  
 
 # Bug 4 - bug4.py
 **AI Diagnosis**: Text  
