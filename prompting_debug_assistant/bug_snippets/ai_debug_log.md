@@ -25,10 +25,10 @@
 **Result**: Both suggested fixes were successful. Also, Claude was the only model to pick up on an issue where the code doesn't generate an error yet prints the incorrect output due to the indexing.  
 
 # Bug 5 - bug5.js
-**AI Diagnosis**: Text  
-**Suggested Fix**: Text  
-**Alternative Fixes Tested**: Text  
-**Result**: Text  
+**AI Diagnosis**: Claude: The problem is a logic error in the condition: `hasPermission === false` grants access to people who don't have permission.  
+**Suggested Fix**: check for permission being `true` instead of `false`  
+**Alternative Fixes Tested**: Comparing a Boolean to true or false was simplified to `return age >= 18 && hasPermissions;` This is because both statements in the line of code are already Boolean expressions. Therefore, to grant access both will need to be `true`  
+**Result**: Code successfully tested without any errors.    
 
 # Bug 6 - bug6.sql
 **AI Diagnosis**: Text  
