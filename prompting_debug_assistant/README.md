@@ -1,0 +1,1 @@
+In this project, a collection of flawed code snippets are investigated using AI, to guide through the debugging process. The end goal is to deliver annotated solutions, structured bug reports and a comparative reflection on AI-assisted debugging.
