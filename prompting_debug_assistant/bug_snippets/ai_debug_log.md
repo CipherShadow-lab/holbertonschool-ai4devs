@@ -31,7 +31,7 @@
 **Result**: Code successfully tested without any errors.    
 
 # Bug 6 - bug6.sql
-**AI Diagnosis**: Text  
-**Suggested Fix**: Text  
-**Alternative Fixes Tested**: Text  
-**Result**: Text  
+**AI Diagnosis**: Claude: he problem is operator precedence: in SQL, `AND` binds more tightly than `OR`, so the `WHERE` clause isn't grouped the way you probably intended.    
+**Suggested Fix**: Add parentheses around the `OR` so the age check applies to both courses.  
+**Alternative Fixes Tested**: Alternative suggestion, is to include the `IN` parameter for the query. This makes the final part of the query to be: `AND course IN ('AI Development', 'Web Development')`  
+**Result**: Due to the absence of a database, the suggested fixes were not tested.  
