@@ -21,7 +21,7 @@
 ## Bug 5 -bug5_fixed.js  
 - **Input**: 19 (modified `const studentAge`)  
 - **Expected Output**: true  
-- **Actual Output**: false* (refer to notes for explanation)  
+- **Actual Output**: true (*when an additional change was made to `const studentHasPermission`)
 
 ## Bug 6 -bug6_fixed.sql
 - **Input**: <br>SELECT name, age, course<br>
