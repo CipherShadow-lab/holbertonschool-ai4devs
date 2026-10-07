@@ -1,12 +1,12 @@
 ## Bug 1 -bug1_fixed.py  
 - **Input**: [25, 50, 37, 44, 60]  
 - **Expected Output**: 43.2  
-- **Actual Output**: 43.2 ✅  
+- **Actual Output**: 43.2 (Fixed with added parenthesis for `calculate_average` call) ✅  
 
 ## Bug 2 -bug2_fixed.py  
 - **Input**: [("Laptop", 1200), ("Keyboard", 100), ("Mouse", 50)]  
-- **Expected Output**: Laptop costs: $1080 Keyboard costs: $90 Mouse costs: $45  
-- **Actual Output**: Laptop costs: $1080 Keyboard costs: $90 Mouse costs: $45 ✅
+- **Expected Output**: [("Laptop", 1080), ("Keyboard", 90) ("Mouse", 45)]  
+- **Actual Output**: [("Laptop", 1080), ("Keyboard", 90) ("Mouse", 45)] ✅
 
 ## Bug 3 -bug3_fixed.py
 - **Input**: 51  
