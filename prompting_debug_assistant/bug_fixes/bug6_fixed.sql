@@ -14,4 +14,4 @@ INSERT INTO students VALUES
 SELECT name, age, course
 FROM students
 WHERE age > 18
-AND (course = 'AI Development' OR course = 'Web Development');
+AND course IN ('AI Development' OR course = 'Web Development');

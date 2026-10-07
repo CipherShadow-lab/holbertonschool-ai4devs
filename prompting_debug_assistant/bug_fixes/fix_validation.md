@@ -1,7 +1,8 @@
 ## Bug 1 -bug1_fixed.py  
 - **Input**: [25, 50, 37, 44, 60]  
 - **Expected Output**: 43.2  
-- **Actual Output**: 43.2 (Fixed with added parenthesis for `calculate_average` call) ✅  
+- **Actual Output**: 43.2 ✅
+- **Notes**: Code was fixed and tested with added parenthesis for `calculate_average` call.    
 
 ## Bug 2 -bug2_fixed.py  
 - **Input**: [("Laptop", 1200), ("Keyboard", 100), ("Mouse", 50)]  
