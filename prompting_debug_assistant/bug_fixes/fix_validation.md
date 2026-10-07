@@ -21,16 +21,4 @@
 ## Bug 5 - bug5_fixed.js  
 - **Input**: 19
 - **Expected Output**: true  
-- **Actual Output**: true ✅ / Fixed confirmed successful - where the correct output of true was shown.
-
-## Bug 6 - bug6_fixed.sql
-- **Input**: <br>SELECT name, age, course<br>
-FROM students 
-WHERE age > 18
-AND course IN ('AI Development', 'Web Development');    
-- **Expected Output**: 
-Alice   | 22  | AI Development  
-Charlie | 25  | AI Development  
-- **Actual Output**:
-Alice   | 22  | AI Development  
-Charlie | 25  | AI Development ✅ / Fix confirmed successful - where the query returned the correct student output.
+- **Actual Output**: true ✅ / Fixed confirmed successful - where the correct output of true was shown.  

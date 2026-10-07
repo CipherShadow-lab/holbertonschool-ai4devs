@@ -21,9 +21,4 @@
 ## Bug 5 - bug5.js
 **Intended Behaviour**: Javascript correctly determines if student has access based on 2 conditions - aged 18 and over and has permission.  
 **Issue Type**: Logical Error  
-**Notes**: Due to an incorrect boolean condition the JavaScript prints out the wrong output (E.g. True instead of False).  
-
-## Bug 6 - bug6.sql
-**Intended Behaviour**: SQL query intends to find students over 18 and enrolled in either AI Development or Web Development.  
-**Issue Type**: Query Logic Error  
-**Notes**: SQL's handling of AND and OR means the condition isn't interpreted as expected. Here, parentheses are required (around the OR statement for the optional courses) to make the intended logic explicit.  
+**Notes**: Due to an incorrect boolean condition the JavaScript prints out the wrong output (E.g. True instead of False).    

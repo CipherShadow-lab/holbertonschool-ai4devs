@@ -29,9 +29,3 @@
 **Suggested Fix**: check for permission being `true` instead of `false`  
 **Alternative Fixes Tested**: Comparing a Boolean to true or false was simplified to `return age >= 18 && hasPermissions;` This is because both statements in the line of code are already Boolean expressions. Therefore, to grant access both will need to be `true`  
 **Result**: Code successfully tested without any errors.    
-
-## Bug 6 - bug6.sql
-**AI Diagnosis**: Claude: he problem is operator precedence: in SQL, `AND` binds more tightly than `OR`, so the `WHERE` clause isn't grouped the way you probably intended.    
-**Suggested Fix**: Add parentheses around the `OR` so the age check applies to both courses.  
-**Alternative Fixes Tested**: Alternative suggestion, is to include the `IN` parameter for the query. This makes the final part of the query to be: `AND course IN ('AI Development', 'Web Development')`  
-**Result**: Updated query - including the `IN` parameter and parenthesis was tested and returned the correct output from the database.
