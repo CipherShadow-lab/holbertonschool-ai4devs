@@ -31,4 +31,4 @@ WHERE age > 18<br>
 - **Expected Output**: <br> Alice   | 22  | AI Development<br>
 Charlie | 25  | AI Development<br>
 - **Actual Output**: <br>Alice   | 22  | AI Development<br>
-Charlie | 25  | AI Development<br>
+Charlie | 25  | AI Development<br> ✅ (successfully ran with the correct student output.)
