@@ -9,7 +9,7 @@
 - **Actual Output**: Laptop: 1080, Keyboard: 90, Mouse: 45 ✅ / Fix confirm successful - correct discount applied for all products.
 
 ## Bug 3 - bug3_fixed.py
-- **Input**: 51  
+- **Input**: int(input("Enter your age: 51"))  
 - **Expected Output**: You are an adult. You were born in: 1975  
 - **Actual Output**: You are an adult. You were born in: 1975 ✅ / Fixed confirmed as successful where input string was converted into an integer.
 
