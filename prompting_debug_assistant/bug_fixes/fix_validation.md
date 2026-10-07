@@ -24,11 +24,11 @@
 - **Actual Output**: false* (refer to notes for explanation)  
 
 ## Bug 6 -bug6_fixed.sql
-- **Input**: SELECT name, age, course<br>
+- **Input**: <br>SELECT name, age, course<br>
 FROM students<br>
 WHERE age > 18<br>
   AND (course = 'AI Development' OR course = 'Web Development');<br>  
-- **Expected Output**: Alice   | 22  | AI Development<br>
+- **Expected Output**: <br> Alice   | 22  | AI Development<br>
 Charlie | 25  | AI Development<br>
-- **Actual Output**:Alice   | 22  | AI Development<br>
+- **Actual Output**: <br>Alice   | 22  | AI Development<br>
 Charlie | 25  | AI Development<br>
