@@ -1,7 +1,7 @@
 # Reflection on AI-Assisted Debugging
 
 ## Introduction
-This project was approached by first creating 5 small codes / code snippets that included bugs such as:  
+This project involved creating five small code snippets containing different bugs:
 
 - Syntax error (bug1.py)
 - Logic error (bug2.py)
@@ -9,53 +9,36 @@ This project was approached by first creating 5 small codes / code snippets that
 - Off-by-one error (bug4.js)
 - Logical Operator bug (bug5.js)
 
-All codes were passed through three AI models (Claude, ChatGPT and Gemini) with the same prompt:  
+Each code was passed through Claude, ChatGPT and Gemini using the same prompt:
 
-*"This code throws an error / doesn't behave as expected. Can you identify and explain the issue and how to fix it?"*  
+*"This code throws an error / doesn't behave as expected. Can you identify and explain the issue and how to fix it?"*
 
-As LLMs will always generate a different response (both by the same model and across different models), three models were used to assess and compare each response in relation to:
+The models were compared based on how accurately they identified the bugs, the detail and clarity of their explanations, the conciseness of their suggested fixes, whether they identified unforeseen issues and whether they suggested test cases or best coding practices.
 
-- How well they were able to identify the bugs  
-- The level of detail provided as to why the bugs caused issues in the code  
-- How concise the responses were in relation to explaining the issue and the suggested fixes 
-- Whether they were able to identify other/unforeseen issues in the code; and  
-- If further suggestions were made relating to test cases and/or best coding practices.  
-
-This approach also revealed how much each of the responses varied and highlighted any potential issues/mistakes made by the model(s) when identifying the bugs. 
-
-**Note**: It needs to be noted that the codes submitted to the models were **not** overly complex; as the goal of this project was to assess AI's capabilities in identifying bugs, the level of trust formed when reviewing the suggested fixes and determining whether human intuition was required to further investigate the proposed fixes.  
-
-Ultimately, the objective of the project is to provide further insights into AI's role when it comes to real-world debugging.  
-
+The project aimed to assess AI's effectiveness in debugging, the level of trust placed in suggested fixes and whether human judgement was needed to investigate those suggestions.
 
 ## AI Strengths
-Across the three models, all bugs were correctly identified, along with sufficient reasoning and suggested fixes for each code.  
+All three models correctly identified the bugs and provided reasoning and suggested fixes. However, their responses varied with some models being better suited to particular aspects of debugging.
 
-As expected, the responses varied across all three models however, throughout the process, it became apparent that certain models were better suited to debugging compared to others.  
-
-For example:
-Gemini was found to consistently label the type of bug that was present in the code (e.g. Logic error, TypeError, etc.) before providing an explanation of what the bug type meant, why this caused issues in the code and what the suggested fix(es) were. 
-Yet Claude was the only model to identify an additional unforeseen bug in `bug4.js`, which the other two models completely missed. 
-Additionally, Claude's and Gemini's responses were both clear and concise, without providing extensive details (unless requested). 
+Gemini consistently identified and labelled the type of bug before explaining why it caused an issue and how to fix it. Claude was the only model to identify an additional unforeseen bug in `bug4.js`, which the other models missed. Claude and Gemini also provided clear and concise responses without unnecessary detail.
 
 ## AI Weaknesses
-Despite ChatGPT being able to correctly identify the bugs in all of the codes, there was one instance where it suggested a fix that indirectly changed the logic as well. 
+Although ChatGPT correctly identified all bugs, it suggested a fix in `bug5.js` that indirectly changed the intended logic.
 
-For example, in `bug5.js` the issue was specifically related to a Boolean condition `hasPermission === false` (defined in the `if` statement). 
-Here, ChatGPT proposed changing `hasPermission === false` to `hasPermission === true` **AND** changing the intended rule to `if (age >= 18 && hasPermission === true)` - instead of keeping `if (age >=18 || hasPermission === true)`.
+The original issue involved the Boolean condition `hasPermission === false`. ChatGPT suggested changing this to `hasPermission === true` **AND** changing the rule to `if (age >= 18 && hasPermission === true)` instead of keeping `if (age >= 18 || hasPermission === true)`.
 
-This highlighted that AI not only has the potential to make mistakes, it also has the potential to steer developers down the path of making unintended changes to their code logic when debugging. 
+This demonstrated that AI can not only make mistakes but can also unintentionally steer developers towards changing their code's logic while attempting to fix a bug.
 
 ## Human Role
-Throughout this project, there were no significant concerns or issues where manual intervention was required. However, there was a case where the issue in the code could be addressed in more than one way.
+No significant manual intervention was required however, `bug4.js` demonstrated that some issues can have multiple valid solutions.
 
-For example, in `bug4.js` the `for` loop was able to be corrected by:
+The `for` loop could be corrected by:
+- adding `=` so it included `itemIndex <= lastIndex`
+- OR removing `lastIndex` and using `itemIndex < shoppingList.length`
 
-- simply adding an `=` so that it included `itemIndex <= lastIndex`
-- OR dropping `lastIndex` entirely, where the loop would include: `itemIndex < shoppingList.length` 
-
-This led to checking on Google as well as further prompting AI for clarification on what the best practice / approach would be - from a 'cleaner' code and optimisation perspective.
+This led to further research and prompting AI to determine the best approach from a code cleanliness and optimisation perspective.
 
 ## Conclusion
-In summary, all models demonstrated how AI can be useful and effective when it comes to identifying bugs in code and software. It is evident that AI can save developers time by helping to detect, interpret and resolve coding issues more efficiently.  
-However, as mentioned above, there is also great potential for AI to indirectly lead developers down a path where the logic in their code is changed - resulting from applying a suggested fix. This highlights that using AI (as a tool) in debugging should be approached with a critical mindset and without defaulting to trusting the model's initial response. This is especially true in situations where code is required to be delivered under tight time constraints.
+In summary, this project demonstrated that AI can be useful for identifying and resolving coding issues. AI can save developers time by helping detect, interpret and fix bugs more efficiently.
+
+However, AI can also suggest fixes that unintentionally change existing logic. Therefore, AI-assisted debugging should be approached critically rather than relying on the model's initial response. Human judgement remains important, particularly when debugging under tight time constraints.
