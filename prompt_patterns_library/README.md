@@ -1,2 +1,2 @@
-AI systems perform better when guided with well-structured and reusable prompts, and this project focuses on designing a library of reusable “prompt patterns” that developers can apply across different coding and documentation tasks.
+AI systems perform better when guided with well-structured and reusable prompts, and this project focuses on designing a library of reusable “prompt patterns” that developers can apply across different coding and documentation tasks.  
 Upon completion of this project, further expertise is gained in systematically designing, testing, and documenting prompts that enhance productivity and reliability in AI-assisted workflows.
