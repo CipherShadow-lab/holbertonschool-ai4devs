@@ -1,4 +1,4 @@
-![prompt-engineering](Imgages/Pasted image 20261011095725.png)
+![[prompt-engineering](Images/Pasted image 20261011095725.png)]
 ---
 
 # The Secrets Behind Prompting 
