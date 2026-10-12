@@ -12,7 +12,7 @@ While this is true, the more precise definition of prompting is:
 > ***It's a call-to-action to the Large Language Model (LLM)***
 <br>
 
-**Note:** Large language models (LLMs) are advanced AI systems designed to understand and generate human-like text based on the input they receive. They are built using deep learning techniques and can perform  tasks such as language translation, text summarization and answering questions.%%
+**Note:** Large language models (LLMs) are advanced AI systems designed to understand and generate human-like text based on the input they receive. They are built using deep learning techniques and can perform  tasks such as language translation, text summarization and answering questions.  
 <br>
 
 So, rather than thinking of prompting simply as *"asking AI questions"*, we need to adopt the mindset of prompting as:
@@ -46,10 +46,10 @@ Before the model sees anything, the JSON is then flattened into one long string 
 The trailing `assistant` marker is the cue for the model to start generating its reply. 
 
 
-> [!NOTE] The model is trained to treat each 'role' marker/label (e.g. `>system`, `>user` etc) differently. For example, the user message is read as the request to respond to, whereas the system instructions are read as standing rules on how the model should behave and respond.  
+> **_NOTE:_** The model is trained to treat each 'role' marker/label (e.g. `>system`, `>user` etc) differently. For example, the user message is read as the request to respond to, whereas the system instructions are read as standing rules on how the model should behave and respond.  
 
  
-> [!Note] The model is trained to follow system instructions over user prompts. This is a learned behaviour as opposed to hard-coded rules - *which is what makes prompt injection possible* =]
+> **_NOTE:_** The model is trained to follow system instructions over user prompts. This is a learned behaviour as opposed to hard-coded rules - *which is what makes prompt injection possible* =]
 
 
 The above string is then split into tokens and converted to a list of numbers. E.g. `[4821, 910, 33, ...]`. 
