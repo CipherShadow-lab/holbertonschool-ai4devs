@@ -102,13 +102,11 @@ How we craft our prompt is referred to as:
 <br>
 <br>
 
-
-![hacking-probabilities](Images/Hacking-probabilities-4.png)
+# Hacking the Probability
 <br>
 
-# Hacking the Probability
-
-## Technique 1 - Personas 🥸
+## Technique 1 - Personas 🥸  
+<br>
 
 Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.
 
