@@ -5,11 +5,11 @@
 
 When asked *"what is prompting?"*, most people would answer:
 
-> ***Asking AI to do stuff!***
+***Asking AI to do stuff!***
 
 While this is true, the more precise definition of prompting is:
 
-> ***It's a call-to-action to the Large Language Model (LLM)***
+***It's a call-to-action to the Large Language Model (LLM)***
 <br>
 
 > [!NOTE]
@@ -18,7 +18,7 @@ While this is true, the more precise definition of prompting is:
 
 So, rather than thinking of prompting simply as *"asking AI questions"*, we need to adopt the mindset of prompting as:
 
-> **Programming AI with words.**  
+> ***Programming AI with words.***  
 
 This means that whenever we give AI a prompt, it then formats the prompt into a particular structure that essentially programs the AI - *telling it what to do.*
 <br>
@@ -38,6 +38,7 @@ When providing a prompt In a chat application (e.g. Claude, ChatGPT) the applica
   ]
 }
 ```
+<br>
 
 Before the model sees anything, the JSON is then flattened into one long string with special tokens, marking where the text begins and ends:
 
@@ -48,23 +49,29 @@ Before the model sees anything, the JSON is then flattened into one long string 
 The trailing `assistant` marker is the cue for the model to start generating its reply. 
 
 
-> **_NOTE:_** The model is trained to treat each 'role' marker/label (e.g. `>system`, `>user` etc) differently. For example, the user message is read as the request to respond to, whereas the system instructions are read as standing rules on how the model should behave and respond.  
-
+> [!NOTE]
+> The model is trained to treat each 'role' marker/label (e.g. `>system`, `>user` etc) differently. For example, the user message is read as the request to respond to, whereas the system instructions are read as standing rules on how the model should behave and respond.  
+<br>
  
-> **_NOTE:_** The model is trained to follow system instructions over user prompts. This is a learned behaviour as opposed to hard-coded rules - *which is what makes prompt injection possible* =]
-
+> [!NOTE]
+> The model is trained to follow system instructions over user prompts. This is a learned behaviour as opposed to hard-coded rules - *which is what makes prompt injection possible* =]
+<br>
 
 The above string is then split into tokens and converted to a list of numbers. E.g. `[4821, 910, 33, ...]`. 
 **The model only ever operates on this sequence of numbers.** 
 
 This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.
+<br>
 
-![[attention-layer](Attention-layer3.png)
+![[attention-layer](Images/Attention-layer3.png)
+<br>
 
 
 With this high-level understanding of how LLMs work behind the scenes, it's important to remember:
 
-> [!IMPORTANT] For prompts to be effective, we need to adopt the mindset of LLMs being **Prediction Engines**. 
+> [!IMPORTANT]
+> For prompts to be effective, we need to adopt the mindset of LLMs being **Prediction Engines**. 
+<br>
 
 In other words, an LLM is a super advanced, auto-complete system that are always predicting the next word (token) in the response.
 
