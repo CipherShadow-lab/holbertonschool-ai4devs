@@ -68,7 +68,8 @@ The above string is then split into tokens and converted to a list of numbers. E
 This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.  
 <br>
 
-![attention-layer](Images/Attention-layer3.png)
+![attention-layer](Images/Attention-layer3.png)  
+
 <br>
 
 
