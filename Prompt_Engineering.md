@@ -78,9 +78,8 @@ With this high-level understanding of how LLMs work behind the scenes, it's impo
 <br>
 
 In other words, an LLM is a super advanced, auto-complete system that are always predicting the next word (token) in the response.  
-
 For example, if we were to prompt an AI model with:  
-
+<br>
 `The capital of France is ...`  
 <br>
 
@@ -98,10 +97,9 @@ Essentially, the key takeaway here is:
 - Whereas if the pattern is more focused, then the AI delivers more precise results. 
 
 How we craft our prompt is referred to as:
-#### *"Hacking the probability!"*
-
-
----
+#### *"Hacking the probability!"*  
+<br>
+<br>
 
 
 # Hacking the Probability
