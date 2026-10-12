@@ -7,6 +7,7 @@
 When asked *"what is prompting?"*, most people would answer:
 
 ***Asking AI to do stuff!***  
+<br>
 
 While this is true, the more precise definition of prompting is:
 
