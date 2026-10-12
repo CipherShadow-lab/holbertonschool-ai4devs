@@ -335,7 +335,6 @@ print("I am " + age + " years old")
 > Using examples for output also helps when building AI systems! =]
 <br>
 
----  
 
 ## Advanced Techniques 👑  
 
