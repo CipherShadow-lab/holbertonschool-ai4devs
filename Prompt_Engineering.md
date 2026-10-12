@@ -100,12 +100,11 @@ Essentially, the key takeaway here is:
 How we craft our prompt is referred to as:
 #### *"Hacking the probability!"*  
 <br>
-<br>
 
 # Hacking the Probability
 <br>
 
-## Technique 1: Personas 🥸  
+## Technique 1: Personas🥸  
 
 Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.  
 
