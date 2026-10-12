@@ -17,7 +17,8 @@ While this is true, the more precise definition of prompting is:
 
 So, rather than thinking of prompting simply as *"asking AI questions"*, we need to adopt the mindset of prompting as:
 
- > **Programming AI with words.**
+> [!NOTE]
+> **Programming AI with words.**
 
 This means that whenever we give AI a prompt, it then formats the prompt into a particular structure that essentially programs the AI - *telling it what to do.*
 
