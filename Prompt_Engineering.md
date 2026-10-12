@@ -1,4 +1,4 @@
-![[Pasted image 20261011095725.png](https://github.com/CipherShadow-lab/holbertonschool-ai4devs/tree/main/Images)]
+![prompt-engineering](Imgages/Pasted image 20261011095725.png)(https://github.com/CipherShadow-lab/holbertonschool-ai4devs/tree/main/Images)
 
 ---
 
@@ -10,7 +10,8 @@ When asked *"what is prompting?"*, most people would answer:
 
 While this is true, the more precise definition of prompting is:
 
-> [!QUOTE] *It's a call-to-action to the Large Language Model (LLM)*
+> ***It's a call-to-action to the Large Language Model (LLM)***
+
 
 %% Large language models (LLMs) are advanced AI systems designed to understand and generate human-like text based on the input they receive. They are built using deep learning techniques and can perform  tasks such as language translation, text summarization and answering questions.%%
 
