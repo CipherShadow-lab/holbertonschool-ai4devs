@@ -128,7 +128,6 @@ The mindset we're adopting here, is to approach prompting AI as if we're asking 
 
 Let's assume we lived in a world where Google isn't available or there's no other online sources for finding out information we need. This raises the question, "*What kind of person would I ask, to help me with this problem?"*   
 <br>
-<br>
 
 > [!NOTE]
 > This is the same mindset that should be adopted when asking AI to write an email, report, debug code etc.
