@@ -88,7 +88,8 @@ The model makes a prediction on what the next word (token) will be - *Paris*.
 <br>
 
 This is essentially how models are trained, where they are feed huge amounts of data (big datasets). 
-The model guesses each next token (a word or part of a word which the model handles as a number), then checks its guess against the actual data. Whenever the guess is wrong, it adjusts its parameters (weights). This process is repeated billions of times, which teaches the model the patterns in language. 
+The model guesses each next token (a word or part of a word which the model handles as a number), then checks its guess against the actual data. Whenever the guess is wrong, it adjusts its parameters (weights). This process is repeated billions of times, which teaches the model the patterns in language.  
+<br>
 
 So, what does this mean when AI receives a prompt? It doesn't actually see text as a sentence or a question. Instead, it only ever sees **patterns**.  
 <br>
