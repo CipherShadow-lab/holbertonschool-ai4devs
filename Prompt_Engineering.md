@@ -1,7 +1,8 @@
 ![prompt-engineering-secrets](Images/20261011095725.png)  
 <br>
 
-# The Secrets Behind Prompting 
+# The Secrets Behind Prompting
+<br>
 
 When asked *"what is prompting?"*, most people would answer:
 
