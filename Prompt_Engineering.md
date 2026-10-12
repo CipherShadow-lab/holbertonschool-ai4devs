@@ -12,19 +12,20 @@ While this is true, the more precise definition of prompting is:
 > ***It's a call-to-action to the Large Language Model (LLM)***
 <br>
 
-**Note:** Large language models (LLMs) are advanced AI systems designed to understand and generate human-like text based on the input they receive. They are built using deep learning techniques and can perform  tasks such as language translation, text summarization and answering questions.  
+> [!NOTE]
+> Large language models (LLMs) are advanced AI systems designed to understand and generate human-like text based on the input they receive. They are built using deep learning techniques and can perform  tasks such as language translation, text summarization and answering questions.  
 <br>
 
 So, rather than thinking of prompting simply as *"asking AI questions"*, we need to adopt the mindset of prompting as:
 
-> [!NOTE]
-> **Programming AI with words.**
+> **Programming AI with words.**  
 
 This means that whenever we give AI a prompt, it then formats the prompt into a particular structure that essentially programs the AI - *telling it what to do.*
+<br>
 
-### Behind the Scenes Example:
+### Behind the Scenes Example:  
 
-When providing a prompt In a chat application (e.g. Claude, ChatGPT) the application formats the prompt into a structure behind the scenes:
+When providing a prompt In a chat application (e.g. Claude, ChatGPT) the application formats the prompt into a structure behind the scenes:  
 
 ```json
 {
