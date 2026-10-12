@@ -507,7 +507,7 @@ print(is_palindrome("Racecar")) # True
 # Your Ultimate Superpower! 👊  
 
 <br>
-The best superpower you can have when prompting AI, is **clear thinking.**  
+The best superpower you can have when prompting AI, is clear thinking. 
 
 Before even starting to craft a prompt for AI, it's crucial to work out (and describe) exactly how you want it to work.  
 
@@ -516,8 +516,8 @@ Invest your time in doing this - on paper! - because it'll be worth it. And when
 **Anything less than this, will likely produce a mess and you'll become incredibly frustrated** 😤  
 
 So, if you find that the AI response is bad, rather than think "*This AI model hopeless and doesn't know what it's talking about!*", think:  
+<br>
 
-> [!QUOTE]
 > "I didn't explain what I needed well enough. What key details were missing that would have helped to receive a more effective response."
 <br>
 
@@ -531,7 +531,7 @@ Also:
 
 Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt more effectively...  
 
-##### *let's build something insane!* 😎
+#### *let's build something insane!* 😎
 
 
 ---
