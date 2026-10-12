@@ -1,6 +1,6 @@
-![prompt-engineering-secrets](Images/20261011095725.png)
+![prompt-engineering-secrets](Images/20261011095725.png)  
 
-
+<br>
 # The Secrets Behind Prompting 
 
 When asked *"what is prompting?"*, most people would answer:
@@ -102,9 +102,10 @@ How we craft our prompt is referred to as:
 <br>
 
 
-# Hacking the Probability
-
 ![hacking-probabilities](Images/Hacking-probabilities-4.png)
+<br>
+
+# Hacking the Probability
 
 ## Technique 1 - Personas 🥸
 
