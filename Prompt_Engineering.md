@@ -1,5 +1,5 @@
 ![prompt-engineering-secrets](Images/20261011095725.png)
----
+
 
 # The Secrets Behind Prompting 
 
@@ -57,7 +57,7 @@ The above string is then split into tokens and converted to a list of numbers. E
 
 This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.
 
-![[Attention-layer3.png | 450]]
+![[attention-layer](Attention-layer3.png)
 
 
 With this high-level understanding of how LLMs work behind the scenes, it's important to remember:
