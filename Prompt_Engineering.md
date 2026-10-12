@@ -279,7 +279,8 @@ This might sound strange at first, but when giving AI the permission to say when
 ### Technique 4 - Format🧾
 
 <br>
-This technique is about standardising the output by telling the model how you want the results to look.
+This technique is about standardising the output by telling the model how you want the results to look.  
+
 This can include things like:  
 <br>
 - A bulleted list
@@ -287,7 +288,8 @@ This can include things like:
 - Setting the tone. E.g. Professional, apologetic, no corporate fluff  
 <br>
 
-Example:
+**Example:**  
+<br>
 
 ```
 You are a guru Python developer. Help me fix this bug.
@@ -304,9 +306,10 @@ OUTPUT REQUIREMENTS:
 - Don't mention other ways to solve it, just the simplest one.
 - Keep the whole answer under 120 words.
 ```
+<br>
 
-
-Another technique that is useful when prompting an AI for a specific output is to provide an example:
+Another technique that is useful when prompting an AI for a specific output is to provide an example:  
+<br>
 
 ```prompt
 You are a guru Python developer. Help me fix a bug.
@@ -326,20 +329,23 @@ Why it works: str() turns the number into text, so both sides are text.
 age = 15
 print("I am " + age + " years old")
 ```
+<br>
 
+> [!NOTE]
+> Using examples for output also helps when building AI systems! =]
+<br>
 
-> [!NOTE] Using examples for output also helps when building AI systems! =]
+---  
 
+## Advanced Techniques 👑  
 
----
-# Advanced Techniques 👑
+### Chain of Thought (CoT) 🔗  
+<br>
 
+CoT prompting refers to:  
 
-## Chain of Thought (CoT) 🔗
-
-CoT prompting refers to:
-
-> [!NOTE] Asking the AI model to work through a problem step-by-step before providing the final answer. 
+> **Asking the AI model to work through a problem step-by-step before providing the final answer. 
+**
 
 Tracing code line by line is one of the best use cases for CoT. Especially when there is no error message yet the output is wrong.
 
