@@ -227,7 +227,7 @@ print("I am " + age + " years old")
 Please explain why this happens, show the corrected code, and explain it in a way a beginner can understand.
 ```
 <br>
-
+<br>
 
 > [!IMPORTANT]
 > The key takeaway here, is to not hold back on providing AI with details. It's important to be specific and to not let the model fill any gaps itself.  
@@ -242,9 +242,9 @@ So:
 > [!NOTE]
 > MORE CONTEXT = LESS HALLUCINATIONS
 <br>
-
----
 <br>
+
+---  
 
 ### Technique 3 - Context Powerup using Tools 🦾  
 <br>
