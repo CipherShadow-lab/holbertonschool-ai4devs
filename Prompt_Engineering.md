@@ -422,14 +422,16 @@ In turn, this helps to build **TRUST** in the model - because there's visibility
 **ChatGPT's 'Thinking' Feature:**  
 <br>
 
-![chats-thinking](20261011153630.png)
+![chatthinking](20261011153630.png)  
+
 <br>
 
-## Trees of Thought (ToT)🌳
+### Trees of Thought (ToT) 🌳  
 
-Here's where the fun starts!!!
+<br>
+Here's where the fun starts!!!  
 
-The ToT technique extends the traditional CoT reasoning. While CoT forces AI down a single, linear path of logic, ToT allows the model to:
+The ToT technique extends the traditional CoT reasoning. While CoT forces AI down a single, linear path of logic, ToT allows the model to:  
 
 - Explore multiple reasoning paths simultaneously
 - Evaluate the progress
