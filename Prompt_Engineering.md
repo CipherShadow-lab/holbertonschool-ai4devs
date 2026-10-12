@@ -175,23 +175,29 @@ So by giving the AI model a role, we're effectively manipulating the `system pro
 
 
 ---
+<br>
 
-### Technique 2 - Context 📚
+### Technique 2 - Context 📚  
 
 <br>
-LLM's have a tendency to **hallucinate.**
+LLM's have a tendency to **hallucinate.**  
+<br>
 
-In the context of AI, **hallucination** is where the model produces information in a response that sounds convincing, but is false or made up. 
+In the context of AI, **hallucination** is where the model produces information in a response that sounds convincing, but is false or made up.  
+<br>
 
-AI models have a tendency to do this because without receiving specific details in a prompt, it will generate the most plausible-sounding next token (word or part of a word) to structure the response. It does this rather than looking up verified facts.
+AI models have a tendency to do this because without receiving specific details in a prompt, it will generate the most plausible-sounding next token (word or part of a word) to structure the response. It does this rather than looking up verified facts.  
+<br>
 
-To help solve this, we need to give the AI **context**. This what takes the *guess-work* out of prompting. 
+To help solve this, we need to give the AI **context**. This what takes the *guess-work* out of prompting.  
 
-By giving the model **context**, this helps it to understand *exactly* what you need from it.
+By giving the model **context**, this helps it to understand *exactly* what you need from it.  
 
-For example, the difference between a generic prompt versus a prompt with context would be:
+For example, the difference between a generic prompt versus a prompt with context would be:  
+<br>
 
-##### No Context:
+##### No Context:  
+<br>
 
 ```prompt
 Fix my code.
@@ -199,8 +205,10 @@ Fix my code.
 age = 15
 print("I am " + age + " years old")
 ```
+<br>
 
-##### With Context:
+##### With Context:  
+<br>
 
 ```prompt
 You are guru Python developer. Help me find the root cause of this bug.
@@ -219,20 +227,28 @@ print("I am " + age + " years old")
 
 Please explain why this happens, show the corrected code, and explain it in a way a beginner can understand.
 ```
+<br>
 
 
-> [!IMPORTANT] The key takeaway here, is to not hold back on providing AI with details. It's important to be specific and to not let the model fill any gaps itself.
+> [!IMPORTANT]
+> The key takeaway here, is to not hold back on providing AI with details. It's important to be specific and to not let the model fill any gaps itself.  
 
+<br>
 
 Also, AI models are very eager to please. So rather than give you nothing, it will opt to providing a response, even if it means that the information is incorrect.
 
-So:
+So:  
+<br>
 
-> [!NOTE] MORE CONTEXT = LESS HALLUCINATIONS
-
+> [!NOTE]
+> MORE CONTEXT = LESS HALLUCINATIONS
+<br>
 
 ---
-## Technique 3 - Context Powerup using Tools 🦾
+<br>
+
+### Technique 3 - Context Powerup using Tools 🦾  
+<br>
 
 Because AI models can still have the tendency to hallucinate - despite providing it with context - we can minimise the chances of this occurring by telling the model to use specific tools (when providing the context).
 
