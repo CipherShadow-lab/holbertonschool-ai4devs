@@ -41,14 +41,16 @@ When providing a prompt In a chat application (e.g. Claude, ChatGPT) the applica
 ```
 <br>
 
-Before the model sees anything, the JSON is then flattened into one long string with special tokens, marking where the text begins and ends:
+Before the model sees anything, the JSON is then flattened into one long string with special tokens, marking where the text begins and ends:  
+<br>
 
 ```markdown
 <|im_start|>system You are a helpful assistant.<|im_end|><|im_start|>user How does a hash map work?<|im_end|><|im_start|>assistant A hash map stores key-value pairs.<|im_end|><|im_start|>user How is my message treated?<|im_end|><|im_start|>assistant
 ```
+<br>
 
 The trailing `assistant` marker is the cue for the model to start generating its reply. 
-
+<br>
 
 > [!NOTE]
 > The model is trained to treat each 'role' marker/label (e.g. `>system`, `>user` etc) differently. For example, the user message is read as the request to respond to, whereas the system instructions are read as standing rules on how the model should behave and respond.  
@@ -64,7 +66,7 @@ The above string is then split into tokens and converted to a list of numbers. E
 This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.
 <br>
 
-![[attention-layer](Images/Attention-layer3.png)
+![attention-layer](Images/Attention-layer3.png)
 <br>
 
 
