@@ -102,9 +102,8 @@ How we craft our prompt is referred to as:
 <br>
 
 # Hacking the Probability
-<br>
 
-## Technique 1: Personas🥸  
+## Technique 1 - Personas 🥸  
 
 Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.  
 
