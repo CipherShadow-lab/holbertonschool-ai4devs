@@ -422,7 +422,7 @@ In turn, this helps to build **TRUST** in the model - because there's visibility
 **ChatGPT's 'Thinking' Feature:**  
 <br>
 
-![chatthinking](20261011153630.png)  
+![chatthinking](Images/20261011153630.png)  
 
 <br>
 
