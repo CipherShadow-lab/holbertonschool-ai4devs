@@ -190,10 +190,8 @@ In the context of AI, **hallucination** is where the model produces information 
 AI models have a tendency to do this because without receiving specific details in a prompt, it will generate the most plausible-sounding next token (word or part of a word) to structure the response. It does this rather than looking up verified facts.  
 <br>
 
-To help solve this, we need to give the AI **context**. This what takes the *guess-work* out of prompting.  
-
-By giving the model **context**, this helps it to understand *exactly* what you need from it.  
-
+To help solve this, we need to give the AI **context**, which is what takes the *guess-work* out of prompting. By giving the model **context**, this helps it to understand *exactly* what you need from it.    
+<br>
 For example, the difference between a generic prompt versus a prompt with context would be:  
 <br>
 
