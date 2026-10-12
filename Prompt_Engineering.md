@@ -344,7 +344,8 @@ print("I am " + age + " years old")
 
 CoT prompting refers to:  
 
-> **Asking the AI model to work through a problem step-by-step before providing the final answer.**  
+> **Asking the AI model to work through a problem step-by-step before providing the final answer.**
+<br>
 
 Tracing code line by line is one of the best use cases for CoT. Especially when there is no error message yet the output is wrong.
 
