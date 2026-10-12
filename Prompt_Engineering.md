@@ -1,5 +1,4 @@
-![prompt-engineering](Imgages/Pasted image 20261011095725.png)(https://github.com/CipherShadow-lab/holbertonschool-ai4devs/tree/main/Images)
-
+![prompt-engineering](Imgages/Pasted image 20261011095725.png)
 ---
 
 # The Secrets Behind Prompting 
