@@ -1,4 +1,4 @@
-![[Pasted image 20261011095725.png]]
+![[Pasted image 20261011095725.png](https://github.com/CipherShadow-lab/holbertonschool-ai4devs/tree/main/Images)]
 
 ---
 
@@ -6,7 +6,7 @@
 
 When asked *"what is prompting?"*, most people would answer:
 
-> [!QUOTE] *Asking AI to do stuff!*
+> ***Asking AI to do stuff!***
 
 While this is true, the more precise definition of prompting is:
 
