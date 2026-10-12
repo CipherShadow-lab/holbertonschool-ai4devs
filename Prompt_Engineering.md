@@ -103,8 +103,9 @@ How we craft our prompt is referred to as:
 
 # Hacking the Probability
 
-## Technique 1 - Personas 🥸  
+### Technique 1 - Personas 🥸  
 
+<br>
 Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.  
 
 For example, you could ask AI to write an letter on your behalf, apologising for a service outage and sure, the output of letter might be okay, BUT does the letter truly reflect a letter that is written by a CEO of a company or even a CTO?  
