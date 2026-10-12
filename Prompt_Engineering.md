@@ -430,23 +430,27 @@ In turn, this helps to build **TRUST** in the model - because there's visibility
 
 <br>
 Here's where the fun starts!!!  
+<br>
 
 The ToT technique extends the traditional CoT reasoning. While CoT forces AI down a single, linear path of logic, ToT allows the model to:  
 
 - Explore multiple reasoning paths simultaneously
 - Evaluate the progress
-- Backtrack or branch out when it hits a road-block / dead end.
+- Backtrack or branch out when it hits a road-block / dead end.  
+<br>
+In human terms, this would look like:  
 
-In human terms, this would look like:
-
-1. Brainstorming - thinking of three different possible causes for complex bug in the software
-2. Branching and Evaluating - Mentally testing each theory.  E.g. "*If it's a database timeout, I'd see X in the logs, but I don't.*" So you discard that branch
-3. Backtracking - "*Okay, the null pointer exception theory is holding up better. Let's explore that further.*"
+1. Brainstorming - thinking of three different possible causes for complex bug in the software  
+2. Branching and Evaluating - Mentally testing each theory.  E.g. "*If it's a database timeout, I'd see X in the logs, but I don't.*" So you discard that branch  
+3. Backtracking - "*Okay, the null pointer exception theory is holding up better. Let's explore that further.*"  
 4. Synthesis - You arrive at a robust solution.
+<br>
 
-In coding and debugging, ToT prevents the AI from getting locked into a plausible-sounding, yet incorrect first guess. Leading to much higher accuracy on complex logic errors.
+In coding and debugging, ToT prevents the AI from getting locked into a plausible-sounding, yet incorrect first guess. Leading to much higher accuracy on complex logic errors.  
+<br>
 
-For example:
+**For example:**  
+<br>
 
 ```prompt
 I have a Python palindrome function that fails on words with capital letters, spaces or punctuation (like "Racecar"). 
@@ -456,19 +460,23 @@ Please use a Tree of Thoughts approach to fix this:
 2. Thought 2 (Evaluate): Which of these reasons is the actual root cause and what preprocessing steps do we need?
 3. Thought 3 (Code): Write the final, corrected Python function that handles capitalisation, spaces, and punctuation correctly.
 ```
+<br>
 
-When AI runs this prompt, it doesn't *blurt* out a prompt. It builds branches:
+When AI runs this prompt, it doesn't *blurt* out a prompt. It builds branches:  
+<br>
 
 - **Branch A**  **(The Case-Sensitivity Theory):** 
-  "Maybe it fails because 'R' and 'r' don't match." (True, but incomplete. Doesn't fix spaces).
+  "Maybe it fails because 'R' and 'r' don't match." (True, but incomplete. Doesn't fix spaces).  
     
 - **Branch B (The Spacing and Punctuation Theory):** 
-  "Maybe it fails because spaces and colons mess up the reverse comparison." (True, but needs lowercase conversion too).
+  "Maybe it fails because spaces and colons mess up the reverse comparison." (True, but needs lowercase conversion too).  
     
 - **Branch C (The Data Type Theory):** 
   "Maybe numbers or non-string inputs are being passed in." (Unlikely based on the problem description).
+<br>
 
-The AI evaluates these, combines Branch A and Branch B and outputs a clean solution:
+The AI evaluates these, combines Branch A and Branch B and outputs a clean solution:  
+<br>
 
 ```Python
 import string
@@ -487,34 +495,40 @@ def is_palindrome(text):
 # Test it out:
 print(is_palindrome("Racecar")) # True
 ```
+<br>
 
 
-> [!NOTE] This methodical approach is highly effective when it comes debugging. This is because it's about separating the symptoms from the root cause, which  can be mimicked by AI when prompted (correctly).
+> [!NOTE]
+> This methodical approach is highly effective when it comes debugging. This is because it's about separating the symptoms from the root cause, which  can be mimicked by AI when prompted (correctly).
+<br>
 
 
 
----
+# Your Ultimate Superpower! 👊  
 
-# The Ultimate Superpower! 👊
+<br>
+The best **superpower** to have when prompting AI, is **clear thinking.**  
 
-The best **superpower** to have when prompting AI, is **clear thinking.**
+Before even starting to craft a prompt for AI, it's crucial to work out (and describe) exactly how you want it to work.  
 
-Before even starting to craft a prompt for AI, it's crucial to work out (and describe) exactly how you want it to work. 
+Invest your time in doing this - on paper! - because it'll be worth it. And when you're at the point where there's no flaws in your description of the problem you're trying to solve, then it's ready to be converted into a prompt.  
 
-Invest your time in doing this - on paper! - because it'll be worth it. And when you're at the point where there's no flaws in your description of the problem you're trying to solve, then it's ready to be converted into a prompt.
+**Anything less than this, will likely produce a mess and you'll become incredibly frustrated** 😤  
 
-**Anything less than this, will likely produce a mess and you'll become incredibly frustrated** 😤
-
-So, if you find that the AI response is bad, rather than think "*This AI model hopeless and doesn't know what it's talking about!*", think:
+So, if you find that the AI response is bad, rather than think "*This AI model hopeless and doesn't know what it's talking about!*", think:  
 
 > [!QUOTE] "I didn't explain what I needed well enough. What key details were missing that would have helped to receive a more effective response."
+<br>
 
 Also:
+<br>
 
-> [!IMPORTANT] The more specific you get at later stages of the prompting session, the better results you'll get.
+> [!IMPORTANT]
+> The more specific you get at later stages of the prompting session, the better results you'll get.
+<br>
 
 
-Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt more effectively...
+Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt more effectively...  
 
 ##### *let's build something insane!* 😎
 
