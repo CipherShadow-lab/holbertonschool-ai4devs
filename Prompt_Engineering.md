@@ -274,9 +274,9 @@ This means that when providing AI with context, we can specifically request AI t
 This might sound strange at first, but when giving AI the permission to say when it doesn't know something, this dramatically reduces the likelihood of AI lying (hallucinating) just for the sake of providing an answer!  
 <br>
 
----
+---  
 
-### Technique 4 - Format🧾
+### Technique 4 - Format 🧾
 
 <br>
 This technique is about standardising the output by telling the model how you want the results to look.  
