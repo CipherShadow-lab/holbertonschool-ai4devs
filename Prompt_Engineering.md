@@ -171,12 +171,11 @@ Current date: 2026-10-11. Knowledge cutoff: 2026-06.
 ```
 <br>
 
-So by giving the AI model a role, we're effectively manipulating the `system prompt` - to tell it what role it needs to adopt when providing us with a **focused response.** 
-
+So by giving the AI model a role, we're effectively manipulating the `system prompt` - to tell it what role it needs to adopt when providing us with a **focused response.**  
+<br>
 
 ---
 <br>
-
 ### Technique 2 - Context 📚  
 
 <br>
