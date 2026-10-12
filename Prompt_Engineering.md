@@ -531,7 +531,6 @@ Also:
 
 Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt more effectively...  
 
-#### *let's build something insane!* 😎
+#### *let's build something insane!!!* 😎  
 
-
----
+<br>
