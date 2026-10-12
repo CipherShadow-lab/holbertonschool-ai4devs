@@ -176,6 +176,7 @@ So by giving the AI model a role, we're effectively manipulating the `system pro
 
 ---
 <br>
+
 ### Technique 2 - Context 📚  
 
 <br>
