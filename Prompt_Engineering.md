@@ -242,39 +242,43 @@ So:
 > [!NOTE]
 > MORE CONTEXT = LESS HALLUCINATIONS
 <br>
-<br>
 
 ---  
 
 ### Technique 3 - Context Powerup using Tools 🦾  
 <br>
 
-Because AI models can still have the tendency to hallucinate - despite providing it with context - we can minimise the chances of this occurring by telling the model to use specific tools (when providing the context).
+Because AI models can still have the tendency to hallucinate - despite providing it with context - we can minimise the chances of this occurring by telling the model to use specific tools (when providing the context).  
 
-The issue / limitations with LLMs is that they're are trained up to a certain point. In other words they have been trained with data that runs up to a specific time. 
+The issue / limitations with LLMs is that they're are trained up to a certain point. In other words they have been trained with data that runs up to a specific time.  
 
-For example, the current Claude model (Sonnet 5.5) has been trained with data that runs up to the end of June 2026. Anything after this date, the model either doesn't know or it would need to do a web search.
+For example, the current Claude model (Sonnet 5.5) has been trained with data that runs up to the end of June 2026. Anything after this date, the model either doesn't know or it would need to do a web search.  
+<br>
 
+> [!NOTE]
+> At the time of writing, Claude revealed that its knowledge is thinner for the months just before the cutoff (June 2026). This is because less had been written about recent events when the model was trained. Therefore, for anything recent, it's recommended to double-check.  
+<br>
 
-> [!NOTE] At the time of writing, Claude revealed that its knowledge is thinner for the months just before the cutoff (June 2026). This is because less had been written about recent events when the model was trained. Therefore, for anything recent, it's recommended to double-check.
+Thankfully these days, AI models (LLMs) are equipped with tools and one of those tools is that they can access external sources on the web.   
 
+This means that when providing AI with context, we can specifically request AI to reference a web site. However, caution should be applied when doing this, because the model can easily reference the wrong sites - containing incorrect or outdated information. Therefore, it's important to **prompt AI to use a specific web site** that is reputable and reliable.  
+<br>
 
-Thankfully these days, AI models (LLMs) are equipped with tools and one of those tools is that they can access external sources on the web. 
+> [!IMPORTANT]
+> All interactions with AI is stored in the system's memory. It remembers our name, what project we're working on, which makes it easy for us to feel comfortable - as if the LLM is human or even our friend. The fact that the system stores user interaction in memory is what can get in the way. Like in any computer system, memory is limited. This means that over time, the model has great potential to 'forget' what the original context of the prompt is. Therefore never assume and always provide the full context repeatedly.  
+<br>
 
-This means that when providing AI with context, we can specifically request AI to reference a web site. However, caution should be applied when doing this, because the model can easily reference the wrong sites - containing incorrect or outdated information. Therefore, it's important to **prompt AI to use a specific web site** that is reputable and reliable.
-
-
-> [!IMPORTANT] All interactions with AI is stored in the system's memory. It remembers our name, what project we're working on, which makes it easy for us to feel comfortable - as if the LLM is human or even our friend. The fact that the system stores user interaction in memory is what can get in the way. Like in any computer system, memory is limited. This means that over time, the model has great potential to 'forget' what the original context of the prompt is. Therefore never assume and always provide the full context repeatedly.
-
-
-**Another method to avoid hallucations, is to give AI permission to fail.** 
+**Another method to prevent hallucinations, is to give AI permission to fail.**   
+<br>
 
 This might sound strange at first, but when giving AI the permission to say when it doesn't know something, this dramatically reduces the likelihood of AI lying (hallucinating) just for the sake of providing an answer!
-
+<br>
 
 ---
-## Technique 4 - Format🧾
 
+### Technique 4 - Format🧾
+
+<br>
 This technique is about standardising the output by telling the model how you want the results to look.
 This can include things like:
 
