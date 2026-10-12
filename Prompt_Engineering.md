@@ -343,14 +343,14 @@ print("I am " + age + " years old")
 
 CoT prompting refers to:  
 
-> **Asking the AI model to work through a problem step-by-step before providing the final answer. 
-**
+> **Asking the AI model to work through a problem step-by-step before providing the final answer.**  
 
 Tracing code line by line is one of the best use cases for CoT. Especially when there is no error message yet the output is wrong.
 
 For example:
+<br>
 
-**Prompt:**
+**Prompt:**  
 
 ```prompt
 You are a guru Python developer. Help me find the root cause of this bug.
@@ -369,8 +369,9 @@ print(sum_to(5))
 
 Before giving the fix, trace the code step by step using n = 5. Show the value of i and total on each loop. Then explain where the result first differs from what I expected, and give the corrected code.
 ```
+<br>
 
-**Response:**
+**Response:**  
 
 ```prompt
 Trace with n = 5:
@@ -390,33 +391,39 @@ def sum_to(n):
         total += i
     return total
 ```
+<br>
 
-This useful because the code itself doesn't produce an error and if we were to simply ask AI *"Why is this wrong?"* the model might guess a reason why.  Which we DON'T want!
+This useful because the code itself doesn't produce an error and if we were to simply ask AI *"Why is this wrong?"* the model might guess a reason why.  Which we DON'T want!  
 
-The key phrase is the instruction to **trace the code** along with a specific values. 
+The key phrase is the instruction to **trace the code** along with a specific values.  
+<br>
 
-For example:
+**For example:**  
 
-> [!QUOTE] Trace the code step-by-step using n=5
-
-
-Giving the model concrete input to walk through the code works much better than a general *"Think step-by-step"*
-
-
-> [!IMPORTANT] This technique can also be used to check the model's work. Because it if makes a mistake in the trace you can spot it in the written steps =]
+`Trace the code step-by-step using n=5`  
+<br>
 
 
-Applying this technique increases accuracy, because it forces the model to 'think' before generating an answer. 
-In turn, this helps to build **TRUST** in the model - because there's visibility on what the model is doing and how it came to it's conclusion👌
+Giving the model concrete input to walk through the code works much better than a general *"Think step-by-step"*  
+<br>
 
+> [!IMPORTANT]
+> This technique can also be used to check the model's work. Because it if makes a mistake in the trace you can spot it in the written steps =]  
+<br>
 
-> [!TIP]  This old-school technique is seen to be so effective that major players such as Anthropic, OpenAI and Google have integrated this feature into their app. This feature is called either 'thinking' or 'extended thinking' (depending on the platform) and can be enabled by clicking on an icon near the prompt.
+Applying this technique increases accuracy, because it forces the model to 'think' before generating an answer.   
+In turn, this helps to build **TRUST** in the model - because there's visibility on what the model is doing and how it came to it's conclusion👌  
+<br>
 
+> [!TIP]
+> This old-school technique is seen to be so effective that major players such as Anthropic, OpenAI and Google have integrated this feature into their app. This feature is called either 'thinking' or 'extended thinking' (depending on the platform) and can be enabled by clicking on an icon near the prompt.
+<br>
 
-**ChatGPT's 'Thinking' Feature:**
+**ChatGPT's 'Thinking' Feature:**  
+<br>
 
-![[Pasted image 20261011153630.png | 400]]
-
+![chats-thinking](20261011153630.png)
+<br>
 
 ## Trees of Thought (ToT)🌳
 
@@ -505,9 +512,9 @@ Also:
 > [!IMPORTANT] The more specific you get at later stages of the prompting session, the better results you'll get.
 
 
-Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt effectively...
+Ultimately, AI can only be as clear as YOU are! So now that you're all geared up on how to prompt more effectively...
 
-##### *Go build something insane!* 😎
+##### *let's build something insane!* 😎
 
 
 ---
