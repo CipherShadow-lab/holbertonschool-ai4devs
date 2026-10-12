@@ -124,21 +124,26 @@ Act as a Senior Software Engineer who specialises in Python. Your job is to find
 ```
 <br>
 
-The mindset we're adopting here, is to approach prompting AI as if we're asking an *actual person* for assistance (as if the internet didn't exist). 
+The mindset we're adopting here, is to approach prompting AI as if we're asking an *actual person* for assistance (as if the internet didn't exist).   
 
 Let's assume we lived in a world where Google isn't available or there's no other online sources for finding out information we need. This raises the question, "*What kind of person would I ask, to help me with this problem?"* 
 <br>
+
 
 > [!NOTE]
 > This is the same mindset that should be adopted when asking AI to write an email, report, debug code etc.
 <br>
 
+
 By giving AI a persona, we are narrowing the focus so it can guess better! This especially true given that AI models (LLMs) have a wealth of information and data!
+<br>
 
 Behind the scenes, the AI model has what's called a `system prompt` and a `user prompt`. 
-The `system prompt` is what contains the rules that the model needs to adhere to - which can be manipulated.
+The `system prompt` is what contains the rules that the model needs to adhere to - which can be manipulated.  
+<br>
 
-##### System Prompt Example:
+##### System Prompt Example:  
+<br>
 
 ```markdown
 You are Assistant, an AI model made by WTFCorp.
@@ -165,14 +170,16 @@ Current date: 2026-10-11. Knowledge cutoff: 2026-06.
 # Memory and personalization
 - Use stored user preferences only when they are relevant to the request.
 ```
-
+<br>
 
 So by giving the AI model a role, we're effectively manipulating the `system prompt` - to tell it what role it needs to adopt when providing us with a **focused response.** 
 
 
 ---
-## Technique 2 - Context 📚
 
+### Technique 2 - Context 📚
+
+<br>
 LLM's have a tendency to **hallucinate.**
 
 In the context of AI, **hallucination** is where the model produces information in a response that sounds convincing, but is false or made up. 
