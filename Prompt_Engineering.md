@@ -271,7 +271,7 @@ This means that when providing AI with context, we can specifically request AI t
 **Another method to prevent hallucinations, is to give AI permission to fail.**   
 <br>
 
-This might sound strange at first, but when giving AI the permission to say when it doesn't know something, this dramatically reduces the likelihood of AI lying (hallucinating) just for the sake of providing an answer!
+This might sound strange at first, but when giving AI the permission to say when it doesn't know something, this dramatically reduces the likelihood of AI lying (hallucinating) just for the sake of providing an answer!  
 <br>
 
 ---
@@ -280,11 +280,12 @@ This might sound strange at first, but when giving AI the permission to say when
 
 <br>
 This technique is about standardising the output by telling the model how you want the results to look.
-This can include things like:
-
+This can include things like:  
+<br>
 - A bulleted list
 - Setting word limits. E.g. Keep it under 200 words.
-- Setting the tone. E.g. Professional, apologetic, no corporate fluff
+- Setting the tone. E.g. Professional, apologetic, no corporate fluff  
+<br>
 
 Example:
 
