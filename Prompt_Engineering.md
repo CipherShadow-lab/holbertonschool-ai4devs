@@ -63,26 +63,29 @@ The trailing `assistant` marker is the cue for the model to start generating its
 The above string is then split into tokens and converted to a list of numbers. E.g. `[4821, 910, 33, ...]`. 
 **The model only ever operates on this sequence of numbers.** 
 
-This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.
+This is where the transformer layers (hidden layers) use **attention** (calculating weights for each token) to predict what comes next in the generated response.  
 <br>
 
 ![attention-layer](Images/Attention-layer3.png)
 <br>
 
 
-With this high-level understanding of how LLMs work behind the scenes, it's important to remember:
+With this high-level understanding of how LLMs work behind the scenes, it's important to remember:  
+<br>
 
 > [!IMPORTANT]
 > For prompts to be effective, we need to adopt the mindset of LLMs being **Prediction Engines**. 
 <br>
 
-In other words, an LLM is a super advanced, auto-complete system that are always predicting the next word (token) in the response.
+In other words, an LLM is a super advanced, auto-complete system that are always predicting the next word (token) in the response.  
 
-For example, if we were to prompt an AI model with:
+For example, if we were to prompt an AI model with:  
 
-`The capital of France is ...`
+`The capital of France is ...`  
+<br>
 
-The model makes a prediction on what the next word (token) will be - *Paris*. 
+The model makes a prediction on what the next word (token) will be - *Paris*.    
+<br>
 
 This is essentially how models are trained, where they are feed huge amounts of data (big datasets). 
 The model guesses each next token (a word or part of a word which the model handles as a number), then checks its guess against the actual data. Whenever the guess is wrong, it adjusts its parameters (weights). This process is repeated billions of times, which teaches the model the patterns in language. 
@@ -100,9 +103,10 @@ How we craft our prompt is referred to as:
 
 ---
 
+
 # Hacking the Probability
 
-![[Hacking-probabilities-4.png]]
+![hacking-probabilities](Images/Hacking-probabilities-4.png)
 
 ## Technique 1 - Personas 🥸
 
