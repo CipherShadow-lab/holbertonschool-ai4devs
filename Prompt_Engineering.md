@@ -104,31 +104,35 @@ How we craft our prompt is referred to as:
 
 # Hacking the Probability
 <br>
-
-## Technique 1 - Personas 🥸  
+### Technique 1 - Personas 🥸  
 <br>
 
-Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.
+Before asking AI to provide an answer or response for *anything*, it's important to give it perspective.  
 
-For example, you could ask AI to write an letter on your behalf, apologising for a service outage and sure, the output of letter might be okay, BUT does the letter truly reflect a letter that is written by a CEO of a company or even a CTO? 
-**Answer:** most likely NOT!
+For example, you could ask AI to write an letter on your behalf, apologising for a service outage and sure, the output of letter might be okay, BUT does the letter truly reflect a letter that is written by a CEO of a company or even a CTO?  
+**Answer:** most likely NOT!  
+<br>
 
-Here's where **personas** come into play...
+Here's where **personas** come into play...  
+<br>
 
  It's helpful to start your prompt by giving the AI a 'personality'. 
  For example, when debugging software, you would first tell the model what it's role is:
- 
+ <br>
 
-> [!QUOTE] Act as a Senior Software Engineer who specialises in Python. Your job is to find the root cause of the problem, not just make the error go away.
-
+```markdown
+Act as a Senior Software Engineer who specialises in Python. Your job is to find the root cause of the problem, not just make the error go away.
+```
+<br>
 
 The mindset we're adopting here, is to approach prompting AI as if we're asking an *actual person* for assistance (as if the internet didn't exist). 
 
 Let's assume we lived in a world where Google isn't available or there's no other online sources for finding out information we need. This raises the question, "*What kind of person would I ask, to help me with this problem?"* 
+<br>
 
-
-> [!NOTE] This is the same mindset that should be adopted when asking AI to write an email, report, debug code etc. 
-
+> [!NOTE]
+> This is the same mindset that should be adopted when asking AI to write an email, report, debug code etc.
+<br>
 
 By giving AI a persona, we are narrowing the focus so it can guess better! This especially true given that AI models (LLMs) have a wealth of information and data!
 
