@@ -1,4 +1,4 @@
-![prompt-engineering-secrets](Images/20261011095725.png)  
+![prompt-engineering-secrets](Images/prompt-engineering.jpg)  
 <br>
 
 # The Secrets Behind Prompting
