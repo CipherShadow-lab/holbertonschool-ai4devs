@@ -2,11 +2,12 @@
 
 ## Overview  
 
-This project explores how AI prompt engineering can support secure software development workflows, with a focus on code quality, vulnerability detection, security testing, documentation, and configuration management.  
+This project explores how AI prompt engineering can support secure software development workflows, with a focus on code quality, vulnerability detection, security testing, documentation and configuration management.  
   
-The project contains a reusable library of prompt templates designed to help developers use AI tools more effectively when reviewing code, identifying potential security weaknesses, generating tests, and producing technical documentation.  
+The project contains a reusable library of prompt templates designed to help developers use AI tools more effectively when reviewing code, identifying potential security weaknesses, generating tests and producing technical documentation.  
   
-Each template defines a specific role, task, required inputs, expected output, and intended outcome. This structure promotes consistency, clarity, and reusability across different development and cybersecurity scenarios.  
+Each template defines a specific role, task, required inputs and expected output. This structure promotes consistency, clarity and reusability across different development and cybersecurity scenarios.  
+  
   
 ## Objectives  
   
@@ -17,9 +18,10 @@ Each template defines a specific role, task, required inputs, expected output, a
 - Improve the quality and consistency of technical and security documentation.  
 - Establish a standardised prompt library that can be extended as new use cases emerge.  
   
+  
 ## Project Structure  
   
-The prompt templates are organised in the prompts/ directory, with one Markdown file per use case.  
+The prompt templates are organised in the `prompts/` directory, with one Markdown file per use case.  
   
 ```
 prompts/
@@ -40,9 +42,10 @@ prompts/
 └── secrets-environment-management.md
 ```  
   
+
 ## Prompt Template Structure  
   
-Every template follows a consistent Markdown structure to make prompts easier to understand, reuse, and maintain.  
+Every template follows a consistent Markdown structure to make prompts easier to understand, reuse and maintain.  
   
 **Role:**  
 Defines the expertise and perspective the AI should adopt.  
@@ -57,14 +60,15 @@ Identifies the information required to perform the task.
 Specifies the deliverables and their structure.  
   
 > [!NOTE]
-> Templates use descriptive placeholders in uppercase SNAKE_CASE, such as [SOURCE_CODE], [LANGUAGE], [SECURITY_REQUIREMENTS], and [TESTING_FRAMEWORK].  
+> Templates use descriptive placeholders in uppercase SNAKE_CASE, such as `[SOURCE_CODE]`, `[LANGUAGE]`, `[SECURITY_REQUIREMENTS]`, and `[TESTING_FRAMEWORK]`.  
   
 These placeholders can be replaced with project-specific information when a template is used.  
+  
   
 ## Use Cases  
   
 ### 1. Secure Code Quality  
-- **Secure Refactoring**: Improve readability, maintainability, and performance while preserving functionality and security requirements.  
+- **Secure Refactoring**: Improve readability, maintainability and performance while preserving functionality and security requirements.  
 - **Input Validation and Sanitisation**: Identify weaknesses in the handling of untrusted input and recommend appropriate validation rules.  
 - **Hardcoded Secrets Detection**: Identify potential exposed credentials and recommend secure remediation without reproducing secret values.  
   
@@ -98,7 +102,7 @@ These placeholders can be replaced with project-specific information when a temp
   
 4. Replace the placeholders with relevant project information.  
   
-5. Provide the completed prompt to your chosen AI tool.  
+5. Provide the completed prompt to your preferred AI tool.  
   
 6. Review the generated response, verify important claims and test any proposed code changes before adopting them.  
   
@@ -128,11 +132,12 @@ Expected Output:
 Refactored source code, an explanation of the changes,
 relevant design pattern references where applicable,
 and any potential security concerns.
-
 ```  
   
+
 The example illustrates how a reusable template can be populated with specific requirements before being submitted to an AI tool.  
 
+  
 ## Security Considerations
   
 AI-generated code, tests, documentation and security findings should be treated as recommendations that require verification.  
@@ -149,6 +154,7 @@ AI-generated code, tests, documentation and security findings should be treated 
   
 - Do not rely on AI-generated security assessments as a substitute for appropriate security testing and expert review.  
 
+  
 ## Limitations  
   
 AI-generated results may contain incorrect assumptions, incomplete findings, outdated information or recommendations that do not suit the application's architecture.  
@@ -157,11 +163,13 @@ The quality of the output depends on the clarity of the prompt, the completeness
   
 The templates are intended to support developer productivity and security review as opposed to replacing established development practices, automated security tools or professional security assessments.  
   
+  
 ## Project Status  
   
 The prompt library contains 15 reusable Markdown templates covering the identified software development and cybersecurity use cases.  
   
 The templates follow a standardised structure and placeholder naming convention and have passed the project's checker.  
+  
   
 ## Future Improvements  
 
@@ -178,6 +186,7 @@ Potential future enhancements include:
 - Integrating selected prompts into development workflows and continuous integration pipelines.  
   
 - Refining templates based on testing results and developer feedback.  
+  
   
 ## Conclusion  
   
