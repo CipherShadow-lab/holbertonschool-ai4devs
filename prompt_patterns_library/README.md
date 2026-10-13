@@ -1,4 +1,4 @@
-![prompt-engineering-ai](Images/ai.jpg)  
+![prompt-engineering-ai](/Images/ai.jpg)  
 <br>
 
 # AI Prompt Engineering for Secure Software Development  
