@@ -1,7 +1,7 @@
 ![ai-hero](Images/prompt-engineering-hero.png)
 <br>
   
-# holbertonschool-ai4devs  
+# Holberton School - ai4devs  
   
 This repository is where offensive security thinking meets AI development. It's a hands-on record of experiments, technical exercises, reusable prompts and projects exploring how AI can help developers work smarter, identify weaknesses earlier and build more secure software.  
   
@@ -25,7 +25,7 @@ My focus is on applying AI to real engineering problems, including:
   
 - **Ship working solutions**: Turn concepts into practical projects and AI-integrated applications.  
   
-The objective isn't to blindly trust AI. It's to understand its capabilities, challenge its output and use it as a force multiplier.  
+The objective is to understand AI's capabilities, challenge its output and use it as a force multiplier.  
   
 ## The Training Ground
   
@@ -60,41 +60,41 @@ Put the knowledge to work by developing and delivering an AI-integrated minimum 
 - Testing and refinement  
 - Building and shipping a working MVP  
   
-Course details: Holberton School Australia — AI Development Accelerator
-
+Course details: Holberton School Australia — AI Development Accelerator program
+  
 # What's in This Repository?  
   
 This repository documents my progression through the course, from foundational prompt engineering to practical AI-assisted development.  
   
 ## Prompt Engineering Arsenal  
   
-The prompts/ directory contains 15 reusable Markdown templates focused on cybersecurity and secure software development.  
+The `prompts/` directory contains 15 reusable Markdown templates focused on cybersecurity and secure software development.  
   
 Rather than throwing vague instructions at an AI and hoping for the best, these templates define the role, task, required inputs, expected output and intended outcome.  
   
 The goal is simple: Better inputs. More useful outputs. Less guesswork.  
   
-### Secure Code Quality  
+#### Secure Code Quality  
 - Secure refactoring  
 - Input validation and sanitisation    
 - Hardcoded secrets detection  
   
-### Vulnerability Analysis and Debugging  
+#### Vulnerability Analysis and Debugging  
 - SQL injection analysis  
 - Cross-site scripting (XSS) analysis  
 - Authentication and authorisation review  
   
-### Security Testing  
+#### Security Testing  
 - Negative input validation testing  
 - Access control testing  
 - Security regression testing  
   
-### Security Documentation  
+#### Security Documentation  
 - Secure API documentation  
 - Threat modelling  
 - Security review reporting  
 
-### Dependency and Configuration Security  
+#### Dependency and Configuration Security  
 - Dependency vulnerability review  
 - Secure configuration review  
 - Secrets and environment variable management  
@@ -119,10 +119,10 @@ My approach follows a repeatable engineering cycle:
   
 No blind trust. No magic-button security. Just disciplined engineering with AI in the toolkit.
   
-# Connecting the Dots  
+## Connecting the Dots  
   
 **Program**: Holberton School Australia — AI Development Accelerator program.   
 
 **Focus**: AI engineering, prompt engineering, cybersecurity, secure software development and automation.  
 
-**Approach**: Think critically. Test relentlessly. Build securely.     
+**Approach**: *Think critically. Test relentlessly. Build securely.*     
