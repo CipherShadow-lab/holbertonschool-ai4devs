@@ -29,7 +29,7 @@ This document categorises common use cases for AI-assisted secure software devel
   - **Input**: [WEB_CODE], the rendering context and frontend framework.  
   - **Output**: Potential XSS vulnerabilities, affected code locations and recommendations for context-appropriate output encoding or sanitisation.  
 
-- **Authentication and Authorisation Flaws**  
+- **Authentication and Authorisation Review**  
   - **Goal**: Identify weaknesses in user authentication, session management and access permissions that could allow unauthorised access.  
   - **Input**: [AUTHENTICATION_CODE], user roles and the application's access control requirements.  
   - **Output**: Potential security flaws, explanations of unauthorised access risks and recommended fixes.  
