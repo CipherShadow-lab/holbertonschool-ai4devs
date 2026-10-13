@@ -1,4 +1,4 @@
-![ai](Images/ai-prompt-engineering.jpg)
+![ai](Images/prompt-engineering-hero.png)
   
 # AI Prompt Engineering for Secure Software Development  
 
