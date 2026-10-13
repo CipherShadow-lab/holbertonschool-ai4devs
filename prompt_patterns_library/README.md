@@ -1,3 +1,5 @@
+![ai-prompt-engineering](Images/ai-prompt-engineering.jpg)  
+  
 # AI Prompt Engineering for Secure Software Development  
 
 ## Overview  
