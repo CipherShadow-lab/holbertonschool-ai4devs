@@ -1,0 +1,15 @@
+```mermaid
+graph TD
+  A[Mobile App] --> B[API Gateway]
+  B --> C[Authentication Service]
+  B --> D[Ride Service]
+  B --> E[Booking Service]
+  B --> F[Payment Service]
+  B --> G[Trust and Safety Service]
+  C --> H[Persistent Data Storage]
+  D --> H
+  E --> H
+  F --> I[Third-Party Payment Provider]
+  F --> H
+  G --> H
+```
