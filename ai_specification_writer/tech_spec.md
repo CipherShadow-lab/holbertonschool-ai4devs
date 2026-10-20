@@ -1,3 +1,6 @@
+![HITCHTECH](/Images/HITCHTECH.png)  
+<br>
+
 # Technical Specification
 
 ## System Components
