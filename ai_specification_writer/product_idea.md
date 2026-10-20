@@ -1,6 +1,5 @@
 # Product Idea  
 
-<br>
 ![HITCHD](/Images/HITCHED3.png)  
 <br>
 
