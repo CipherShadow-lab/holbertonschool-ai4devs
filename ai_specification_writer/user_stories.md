@@ -1,3 +1,6 @@
+![HITCHDUSERS](/Images/HITCHDUSERS.png)  
+<br>
+
 ### User Story 1
 As a driver, I want to create an account and maintain a basic profile so that I can use HITCHD to publish and manage shared journeys.
 
