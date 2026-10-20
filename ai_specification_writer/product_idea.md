@@ -1,6 +1,6 @@
 # Product Idea
 
-![HITCHD](/Images/HITCHD3.png)  
+![HITCHD](/Images/HITCHED3.png)  
 <br>
 
 ## Vision
