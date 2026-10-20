@@ -1,7 +1,10 @@
 # Product Idea
 
+![HITCHD](/Images/HITCHD3.png)  
+<br>
+
 ## Vision
-HITCHD is a mobile carpooling platform that connects drivers with available seats to passengers travelling in the same direction. Its vision is to make everyday journeys more affordable, convenient, and efficient by helping people share rides and contribute toward travel costs.
+HITCHD is a mobile carpooling platform that connects drivers with available seats to passengers travelling in the same direction. Its vision is to make everyday journeys more affordable, convenient and efficient by helping people share rides and contribute toward travel costs.
 
 - **Brand Name**: HITCHD
 - **Tagline**: Hitch a ride. Save your stride.
