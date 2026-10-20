@@ -1,4 +1,4 @@
-# Product Idea
+# Product Idea  
 
 ![HITCHD](/Images/HITCHED3.png)  
 <br>
