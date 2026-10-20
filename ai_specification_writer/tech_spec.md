@@ -1,4 +1,4 @@
-![HITCHTECH](/Images/HITCHTECH.png)  
+![HITCHTECH](/Images/HITCHDTECH.png)  
 <br>
 
 # Technical Specification
