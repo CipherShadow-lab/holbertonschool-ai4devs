@@ -1,4 +1,4 @@
-![HITCHDUSERS](/Images/HITCHDUSERS.png)  
+![HITCHDUSERS](/Images/HITCHDUSER2.png)  
 <br>
 
 ### User Story 1
