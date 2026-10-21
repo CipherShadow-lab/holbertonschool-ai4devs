@@ -5,38 +5,38 @@
 
 ## Introduction
 
-This project explored how AI can assist with transforming a product idea into a structured specification package. HITCHD was developed as a shared-journey application connecting drivers with available seats and passengers seeking suitable rides. AI was used throughout the process to help produce user stories, acceptance criteria, technical specifications, API definitions, and refinement documentation. The experience demonstrated that AI can significantly accelerate specification writing, but effective results still depend on human verification, product knowledge, and critical thinking.
+This project explored how AI can assist with transforming a product idea into a structured specification package. HITCHD was developed as a shared-journey application connecting drivers with available seats and passengers seeking suitable rides. AI was used to generate and refine user stories, technical specifications, APIs, and supporting documentation. The experience demonstrated that AI can accelerate specification writing, but the quality of its output depends heavily on the quality of the prompt, the context provided, and human verification.
 
 ## AI Strengths
 
-AI was particularly effective at quickly transforming high-level product ideas into structured documentation. It was able to generate user stories in a consistent format and translate those stories into acceptance criteria that could be understood by both product and technical audiences.
+AI handled structured and clearly defined tasks particularly well. Prompts that provided the product context, required format, constraints, and expected output produced useful results quickly. Generating user stories and converting established requirements into technical components and API examples were relatively straightforward because these tasks had clear patterns and boundaries.
 
-AI also performed well when producing the initial technical specification. It identified logical system components such as authentication, rides, bookings, payments, and trust and safety, and connected these components to appropriate data models and API endpoints. This created a useful starting point for thinking about how the product could be structured technically without requiring implementation decisions.
+More open-ended tasks were harder. Asking AI to “improve” an entire specification initially encouraged over-refinement, with changes being suggested even where the original content was already clear. This demonstrated that broader prompts can produce plausible but unnecessary output, while focused prompts with explicit constraints are more effective.
 
-Another strength was maintaining consistency across related documentation. Once the product requirements and user stories had been established, AI could use them as a foundation for developing subsequent specifications and identifying relationships between features, components, models, and APIs.
+Prompt structure also influenced the quality of the results. Providing a role, such as asking AI to approach a problem from a product or technical perspective, helped establish an appropriate mindset. Specifying the desired tone, level of technical detail, and document format reduced ambiguity. Placeholders and explicit context were also useful when information was intentionally unknown, because they prevented assumptions from being presented as confirmed requirements.
 
 ## AI Weaknesses
 
-The most significant weakness was a tendency toward over-specification. During refinement, AI initially attempted to improve almost every part of the documentation, even when some sections were already sufficiently clear. This demonstrated that refinement does not automatically mean adding more detail.
+A significant weakness was AI's tendency to add technically plausible detail that was not necessarily required. During refinement, AI initially treated improvement as an opportunity to modify almost every specification item. Without explicit instructions to preserve scope, this could have introduced unnecessary features or implementation decisions.
 
-AI can also introduce technically plausible requirements that were not actually part of the original product concept. For example, it would have been easy to introduce technologies, advanced security mechanisms, GPS functionality, ratings, or other features simply because they could be relevant to a real application. While these suggestions may be technically reasonable, including them would have expanded the HITCHD MVP beyond its defined scope.
-
-This highlighted an important limitation: AI can produce convincing content without necessarily understanding which requirements are appropriate for the specific project unless the human reviewer provides and enforces clear boundaries.
+One successful prompting adjustment was to explicitly instruct AI to preserve the existing MVP and only make changes that provided a measurable benefit. This produced a much stronger refinement process. Conversely, a less constrained approach produced unnecessary elaboration. This demonstrated that prompt wording directly affects whether AI behaves as a useful reviewer or simply generates more content.
 
 ## Human Role
 
-Human refinement was critical throughout the project. The product concept and identified user groups were treated as the source of truth, ensuring that later specifications remained traceable to the original requirements.
+Human refinement was critical for verifying AI output against the original HITCHD product concept and previously established user groups. Proposed changes were assessed for clarity, consistency, security, and scope rather than being accepted automatically.
 
-The refinement stage was particularly valuable. Rather than accepting every AI-generated improvement, proposed changes were questioned based on whether they provided a genuine benefit. Some specifications were deliberately left unchanged because they were already clear. Other changes improved precision, terminology, consistency, or security without introducing new functionality.
+The strongest example was the refinement of the booking API. Instead of continuing with a client-provided `passenger_id`, the specification was refined so that the request was associated with the authenticated passenger. This improved the security and technical clarity of the specification without introducing a new feature.
 
-Security was also considered through human review. For example, the booking API was refined so that the authenticated passenger's identity could be associated with the request rather than unnecessarily trusting a client-provided passenger ID. Payment processing was also clarified to reinforce the use of a third-party provider without storing raw payment card details.
+Security considerations were also applied selectively to payment processing. The use of a third-party payment provider was clarified without expanding the project into a full security architecture.
 
 ## Lessons Learned
 
-The main lesson from this project is that AI works best as a **collaborative specification assistant rather than an unquestioned author**. It is highly effective at generating alternatives, identifying structures, and accelerating the initial documentation process, but human judgement remains essential for determining whether an output is correct, useful, secure, and within scope.
+The project demonstrated that effective AI-assisted specification writing depends on **prompt quality, structured context, and critical human review**. Easier prompt types were those with a defined format and clear source requirements, while harder prompts were broad requests such as “refine this specification” because they required judgement about what should and should not change.
 
-A practical approach for real-world specification writing is:
+A strong prompt should establish the **role, context, objective, constraints, tone, expected structure, and relevant placeholders or known limitations**. These elements influence how AI interprets the task and help prevent unsupported assumptions.
 
-**Generate → Review → Verify → Refine → Challenge → Finalise**
+The most important lesson is that AI should be treated as a **collaborative specification assistant rather than an unquestioned author**. A practical process is:
 
-AI can suggest what could be changed, but the product developer must decide whether it should be changed. The most valuable use of AI is therefore not simply producing more documentation, but helping humans produce **clearer, more consistent, and more useful documentation while retaining control over product decisions and scope**.
+**Define → Prompt → Review → Verify → Refine → Challenge → Finalise**
+
+AI can suggest what could be changed, but the product developer must decide whether it should be changed. The goal is therefore not to produce the most detailed specification possible, but the **clearest, most consistent, useful, and appropriately scoped specification possible**.
