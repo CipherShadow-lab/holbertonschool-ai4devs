@@ -1,3 +1,6 @@
+![HITCHDREADME](/Images/HITCHDREADME.png)  
+<br>
+
 # AI-Assisted Specification Refinement
 
 I decided to include a README for this part of the project, for I felt it was important to explain the purpose of the refinement stage and detail my reasonings.  
