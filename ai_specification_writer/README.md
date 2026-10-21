@@ -1,4 +1,4 @@
-![HITCHDREADME](/Images/HITCHDREADME.png)  
+![HITCHDREADME](/Images/HITCHDREADME2.png)  
 <br>
 
 # AI-Assisted Specification Refinement
