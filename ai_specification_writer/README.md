@@ -1,8 +1,8 @@
 # AI-Assisted Specification Refinement
 
-## Purpose
+I decided to include a README for this part of the project, for I felt it was important to explain the purpose of the refinement stage and detail my reasonings.  
 
-This project uses AI to assist with the refinement of product and technical specifications for HITCHD, a shared-journey application connecting drivers with available seats and passengers seeking suitable rides.
+## Purpose
 
 The purpose of this refinement stage is not to rewrite every specification item. Instead, AI-generated specifications are reviewed critically to identify areas where improvements can provide genuine value through clearer language, greater consistency, improved technical precision, or appropriate security considerations.
 
