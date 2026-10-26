@@ -1,3 +1,6 @@
+![HITCHDMICRO](/Images/HITCHDMICRO.png)  
+<br>
+
 # Microservices Architecture
 
 - **API Gateway**: Provides a single entry point for requests from the mobile application and routes requests to the appropriate backend service.
