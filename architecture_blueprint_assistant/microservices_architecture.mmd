@@ -1,0 +1,21 @@
+graph TD
+  A[Mobile App] --> B[API Gateway]
+
+  B --> C[Authentication Service]
+  B --> D[User Profile Service]
+  B --> E[Ride Service]
+  B --> F[Booking Service]
+  B --> G[Payment Service]
+  B --> H[Trust & Safety Service]
+
+  F --> E
+  F --> G
+  H --> D
+  H --> F
+
+  C --> I[(Auth Data)]
+  D --> J[(User Data)]
+  E --> K[(Ride Data)]
+  F --> L[(Booking Data)]
+  G --> M[(Payment Data)]
+  H --> N[(Trust & Safety Data)]
