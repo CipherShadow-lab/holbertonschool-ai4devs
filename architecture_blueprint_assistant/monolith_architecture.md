@@ -1,3 +1,6 @@
+![HITCHARCH](/Images/HITCHDARCH.png)  
+<br>
+
 # Monolithic Architecture
 
 - **Mobile App**: Provides the interface used by drivers and passengers to access HITCHD functionality.
