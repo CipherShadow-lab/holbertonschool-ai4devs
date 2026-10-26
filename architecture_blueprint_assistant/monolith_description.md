@@ -1,0 +1,14 @@
+graph TD
+  A[Mobile App] --> B[HITCHD Backend Monolith]
+
+  B --> C[Authentication Module]
+  B --> D[Ride Management Module]
+  B --> E[Booking Module]
+  B --> F[Payment Module]
+  B --> G[Trust & Safety Module]
+
+  C --> H[(HITCHD Database)]
+  D --> H
+  E --> H
+  F --> H
+  G --> H
