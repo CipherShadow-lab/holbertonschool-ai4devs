@@ -1,16 +1,16 @@
 # FAULT//INE
 
 ### ATTACK CHAINS DECODED
-OFFSEC FOR DEVS
+*OFFSEC FOR DEVS*
 
 ---
 
 ![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)
 
 *Dashboard → Node Map → Source Inspection → Attack Chains*  
-**FIND THE WEAKNESS. FOLLOW THE CHAIN. FIX THE FAULT.**
 
----
+**FIND THE WEAKNESS. FOLLOW THE CHAIN. FIX THE FAULT.**  
+
 
 ## THINK LIKE AN ATTACKER
 
