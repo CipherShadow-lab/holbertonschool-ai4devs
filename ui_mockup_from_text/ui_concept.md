@@ -23,6 +23,7 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 ## Users
 
 - **Software Developers**: identify and understand vulnerabilities in their code, uncover how weaknesses could combine into potential attack chains and make informed remediation decisions without requiring extensive security expertise.  
+
 - **Security Professionals**: investigate code vulnerabilities, analyse potential attack paths and support developers with security-focused remediation.  
 
 ## Core Screens
