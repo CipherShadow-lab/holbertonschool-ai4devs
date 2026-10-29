@@ -10,8 +10,7 @@ OFFSEC FOR DEVS
 *Dashboard → Node Map → Source Inspection → Attack Chains*  
 
 **FIND THE WEAKNESS. FOLLOW THE CHAIN. FIX THE FAULT.**  
-
----
+<br>
 
 ## THINK LIKE AN ATTACKER
 
@@ -42,5 +41,3 @@ From source code to potential exploitation paths, FAULT//INE puts the bigger pic
 FAULT//INE is a UI/UX concept with static interface designs and a simulated walkthrough. Vulnerability detection, attack-chain analysis and remediation capabilities are proposed, not implemented.
 
 ---
-
-**FAULT//INE - ATTACK CHAINS DECODED**
