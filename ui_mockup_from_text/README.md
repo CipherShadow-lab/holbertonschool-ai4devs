@@ -18,7 +18,7 @@ One vulnerability. Multiple ways in.
 
 Attackers don't see isolated bugs. They see entry points, opportunities and paths to exploitation.
 
-**FAULT//INE** brings offensive security into the developer workflow - helping devs and security pros uncover vulnerabilities, connect the dots and visualise how weaknesses could be chained together.
+FAULT//INE brings offensive security into the developer workflow - helping devs and security pros uncover vulnerabilities, connect the dots and visualise how weaknesses could be chained together.
 
 Because finding the bug is only half the battle.
 
