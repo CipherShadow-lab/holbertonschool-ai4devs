@@ -5,6 +5,13 @@ OFFSEC FOR DEVS
 
 ---
 
+![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)
+
+*Dashboard → Node Map → Source Inspection → Attack Chains*  
+**FIND THE WEAKNESS. FOLLOW THE CHAIN. FIX THE FAULT.**
+
+---
+
 ## THINK LIKE AN ATTACKER
 
 One vulnerability. Multiple ways in.
@@ -15,7 +22,8 @@ Attackers don't see isolated bugs. They see entry points, opportunities and path
 
 Because finding the bug is only half the battle.
 
-**Understanding the attack path is where things get interesting.**
+**Understanding the attack path is where things get interesting.**  
+
 
 ## FOLLOW THE CHAIN
 
@@ -26,14 +34,6 @@ From source code to potential exploitation paths, FAULT//INE puts the bigger pic
 - // ATTACK CHAINS: Explore how weaknesses could combine and escalate.  
 - // REMEDIATION: Prioritise fixes and break the chain.  
 
-## SEE IT IN ACTION
-
-![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)
-
-*Dashboard → Node Map → Source Inspection → Attack Chains*
-
-**FIND THE WEAKNESS. FOLLOW THE CHAIN. FIX THE FAULT.**
-
 ---
 
 ### // CONCEPT MODE
@@ -42,4 +42,4 @@ FAULT//INE is a UI/UX concept with static interface designs and a simulated walk
 
 ---
 
-**FAULT//INE... ATTACK CHAINS DECODED**
+**FAULT//INE - ATTACK CHAINS DECODED**
