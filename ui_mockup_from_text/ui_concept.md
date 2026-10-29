@@ -1,4 +1,4 @@
-![FAULTLINE](/Images/FAULTLINE.png)
+![FAULTLINE](/Images/FAULTLINE-AD.gif)
 
 # UI Concept - FAULT//INE
 
