@@ -21,10 +21,10 @@ Because finding the bug is only half the battle.
 
 From source code to potential exploitation paths, FAULT//INE puts the bigger picture in focus.
 
-- **// DASHBOARD**: Spot vulnerabilities, severity levels, and emerging risks.  
-- **// NODE MAP**: Connect vulnerable components and visualise potential attack paths.  
-- **// ATTACK CHAINS**: Explore how weaknesses could combine and escalate.  
-- **// REMEDIATION**: Prioritise fixes and break the chain.  
+- // DASHBOARD: Spot vulnerabilities, severity levels, and emerging risks.  
+- // NODE MAP: Connect vulnerable components and visualise potential attack paths.  
+- // ATTACK CHAINS: Explore how weaknesses could combine and escalate.  
+- // REMEDIATION: Prioritise fixes and break the chain.  
 
 ## SEE IT IN ACTION
 
