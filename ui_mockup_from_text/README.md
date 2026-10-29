@@ -23,15 +23,18 @@ Attackers don't see isolated bugs. They see entry points, opportunities and path
 Because finding the bug is only half the battle.
 
 **Understanding the attack path is where things get interesting.**  
-
+<br>
 
 ## FOLLOW THE CHAIN
 
 From source code to potential exploitation paths, FAULT//INE puts the bigger picture in focus.
 
-- // DASHBOARD: Spot vulnerabilities, severity levels, and emerging risks.  
+- // DASHBOARD: Spot vulnerabilities, severity levels, and emerging risks. 
+
 - // NODE MAP: Connect vulnerable components and visualise potential attack paths.  
+
 - // ATTACK CHAINS: Explore how weaknesses could combine and escalate.  
+
 - // REMEDIATION: Prioritise fixes and break the chain.  
 
 ---
@@ -39,5 +42,4 @@ From source code to potential exploitation paths, FAULT//INE puts the bigger pic
 ### // CONCEPT MODE
 
 FAULT//INE is a UI/UX concept with static interface designs and a simulated walkthrough. Vulnerability detection, attack-chain analysis and remediation capabilities are proposed, not implemented.
-
----
+<br>
