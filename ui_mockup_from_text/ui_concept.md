@@ -28,8 +28,11 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 ## Core Screens
 
 - **Dashboard**: provides an overview of applications or projects being analysed, their security findings and identified potential attack chains that may require attention.  
+
 - **Node Map**: provides an interactive, node-based visualisation of code vulnerabilities and their relationships. Users can select individual nodes to inspect vulnerable code, understand why it is vulnerable and uncover how weaknesses could connect into potential attack chains.  
+
 - **Attack Chains**: visually traces potential attack paths, illustrating how connected vulnerabilities could combine to enable an attack and what the potential consequences could be. The visualisation updates as vulnerabilities are remediated, showing how code changes disrupt or break potential attack chains.  
+
 - **Remediation**: helps developers to prioritise vulnerabilities based on their potential role in an attack chain and the impact of exploitation. It explains underlying code weaknesses and provides recommended fixes and relevant security references.  
 
 ## Actions
