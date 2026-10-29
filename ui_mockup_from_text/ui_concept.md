@@ -1,4 +1,4 @@
-![FAULTLINE](images/FAULTLINE.png)
+![FAULTLINE](Images/FAULTLINE.png)
 
 # UI Concept - FAULTLINE
 

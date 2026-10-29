@@ -28,7 +28,7 @@ From source code to potential exploitation paths, FAULT//INE puts the bigger pic
 
 ## SEE IT IN ACTION.
 
-![FAULTLINE_Simulated Attack Chain Demo](images/FAULTLINE-Node-Demo-Loop.gif)
+![FAULTLINE_Simulated Attack Chain Demo](Images/FAULTLINE-Node-Demo-Loop.gif)
 
 *Dashboard → Node Map → Source Inspection → Attack Chains*
 
