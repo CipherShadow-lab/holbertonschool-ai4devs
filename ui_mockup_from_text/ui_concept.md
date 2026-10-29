@@ -1,4 +1,10 @@
-![FAULTLINE](/Images/FAULTLINE-AD.gif)
+<p align="center">
+  <img
+    src="/Images/FAULTLINE-AD.gif"
+    alt="FAULT//INE — ATTACK CHAINS DECODED"
+    width="100%"
+  />
+</p>
 
 # UI Concept - FAULT//INE
 
