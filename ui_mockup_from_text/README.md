@@ -5,7 +5,13 @@ OFFSEC BUILT FOR DEVS
 
 ---
 
-![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)
+<p align="center">
+  <img
+    src="/Images/FAULTLINE-Node-Demo-Loop.gif"
+    alt="FAULT//INE — NODE DEMO LOOP"
+    width="100%"
+  />
+</p>
 
 *Dashboard → Node Map → Source Inspection → Attack Chains*  
 
