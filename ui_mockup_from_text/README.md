@@ -45,5 +45,6 @@ From source code to potential exploitation paths, FAULT//INE puts the bigger pic
 
 ### // CONCEPT MODE
 
-FAULT//INE is a UI/UX concept with static interface designs and a simulated walkthrough. Vulnerability detection, attack-chain analysis and remediation capabilities are proposed, not implemented.
+FAULT//INE is a UI/UX concept with static interface designs and a simulated walkthrough. 
+Vulnerability detection, attack-chain analysis and remediation capabilities are proposed, yet not implemented.
 <br>
