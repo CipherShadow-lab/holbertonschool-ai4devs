@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="/Images/FAULTLINE-AD2.gif"
+    src="/Images/FAULTLINE-AD14.gif"
     alt="FAULT//INE — ATTACK CHAINS DECODED"
     width="100%"
   />
