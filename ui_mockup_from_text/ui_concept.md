@@ -28,7 +28,7 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 
 - **Security Professionals**: investigate code vulnerabilities, analyse potential attack paths and support developers with security-focused remediation.  
   
-
+  
 ## Core Screens
 
 - **Dashboard**: provides an overview of applications or projects being analysed, their security findings and identified potential attack chains that may require attention.  
@@ -39,12 +39,12 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 
 - **Remediation**: helps developers to prioritise vulnerabilities based on their potential role in an attack chain and the impact of exploitation. It explains underlying code weaknesses and provides recommended fixes and relevant security references.  
   
-
+  
 ## Actions
 
 ![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)
   
-
+  
 1. Select an application or project to review its code-security findings  
 2. Discover and explore visual relationships between identified vulnerabilities  
 3. Select individual nodes to inspect vulnerable code and understand why it is vulnerable  
