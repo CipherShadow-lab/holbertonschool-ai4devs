@@ -38,6 +38,8 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 
 ## Actions
 
+![FAULTLINE_Simulated Attack Chain Demo](/Images/FAULTLINE-Node-Demo-Loop.gif)  
+
 1. Select an application or project to review its code-security findings  
 2. Discover and explore visual relationships between identified vulnerabilities  
 3. Select individual nodes to inspect vulnerable code and understand why it is vulnerable  
