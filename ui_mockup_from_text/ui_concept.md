@@ -26,8 +26,8 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 
 - **Software Developers**: identify and understand vulnerabilities in their code, uncover how weaknesses could combine into potential attack chains and make informed remediation decisions without requiring extensive security expertise.  
 
-- **Security Professionals**: investigate code vulnerabilities, analyse potential attack paths and support developers with security-focused remediation.
-<br>
+- **Security Professionals**: investigate code vulnerabilities, analyse potential attack paths and support developers with security-focused remediation.  
+
 
 ## Core Screens
 
@@ -37,8 +37,8 @@ Developers can explore each node to inspect vulnerable code, understand potentia
 
 - **Attack Chains**: visually traces potential attack paths, illustrating how connected vulnerabilities could combine to enable an attack and what the potential consequences could be. The visualisation updates as vulnerabilities are remediated, showing how code changes disrupt or break potential attack chains.  
 
-- **Remediation**: helps developers to prioritise vulnerabilities based on their potential role in an attack chain and the impact of exploitation. It explains underlying code weaknesses and provides recommended fixes and relevant security references.
-<br>
+- **Remediation**: helps developers to prioritise vulnerabilities based on their potential role in an attack chain and the impact of exploitation. It explains underlying code weaknesses and provides recommended fixes and relevant security references.  
+
 
 ## Actions
 
