@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/FAULTINE-APIPROTOTYPING.png" alt="FAULT//INE — ATTACK CHAINS DECODED — API PROTOTYPING" width="100%" />
+  <img src="/images/FAULTINE-APIPROTOTYPING.png" alt="FAULT//INE — ATTACK CHAINS DECODED — API PROTOTYPING" width="100%" />
 </p>FAULT//INE — API Prototyping
 
 ## Purpose  
@@ -14,13 +14,13 @@ FAULT//INE is a developer-focused application security concept that aims to help
 
 ## Target users  
 
-**Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.
+**Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
 <br>
-
+  
 ## Agreed MVP Scope  
 
 The FAULT//INE API prototype focuses on defining a structured, secure interface for managing source-code projects, initiating vulnerability scans, and retrieving findings and potential attack-chain data.  
-  
+<br>  
 | Capability | Agreed MVP Scope |
 |---|---|
 | Target Users | Primarily software developers, with security professionals providing additional support and expertise when required. |
@@ -41,8 +41,8 @@ The FAULT//INE API prototype focuses on defining a structured, secure interface 
 
 ## Scope Exclusions  
 
-The following capabilities are intentionally excluded from the initial API prototype to maintain a focused, achievable MVP.
-
+The following capabilities are intentionally excluded from the initial API prototype to maintain a focused, achievable MVP.  
+<br>
 | Excluded Capability | Rationale |
 |---|---|
 | GitHub repository integration | Keeps source-code ingestion limited to local file uploads. |
@@ -60,7 +60,7 @@ The Node Map is an interactive visualisation of findings and their potential rel
 
 Projects are suitable for conventional CRUD operations. Scanner-produced findings should not be freely created or rewritten as if they were user-authored records. Authentication, pagination and error handling will be defined consistently across the requirements - and OpenAPI specification.
 
-### Details to finalise during requirements and API design  
+**Details to finalise during requirements and API design**:  
   
 The backend framework, precise endpoint paths and schemas, supported scan/detection patterns, JWT issuance and expiry, rate-limit policy, latency targets, source-code retention and deletion rules, and whether analysis uses mock results or an integrated scanner have not yet been agreed. These must be decided explicitly before the corresponding specification details are finalised.
 <br>
