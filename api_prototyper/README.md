@@ -15,7 +15,8 @@ FAULT//INE is a developer-focused application security concept that aims to help
   
 - `api_requirements.md` defines the intended behaviour and constraints 
 - `api_specification.yaml` and `api_specification.json` will express the same interface in OpenAPI 3.0 format.
-<br>  
+<br>
+
 ## Target Users  
 
 **Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
