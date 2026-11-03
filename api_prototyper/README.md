@@ -15,9 +15,8 @@ FAULT//INE is a developer-focused application security concept that aims to help
   
 - `api_requirements.md` defines the intended behaviour and constraints 
 - `api_specification.yaml` and `api_specification.json` will express the same interface in OpenAPI 3.0 format.
-<br>
-
-## Target users  
+  
+## Target Users  
 
 **Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
 <br>
@@ -59,7 +58,7 @@ The following capabilities are intentionally excluded from the initial API proto
 | Production-grade AI analysis | Keeps the prototype focused on API design rather than implementing a complete detection engine. |  
 <br>
   
-## Design rationale  
+## Design Rationale  
 
 The Node Map is an interactive visualisation of findings and their potential relationships, rather than a separate CRUD resource. The Attack Chain view explains selected potential exploitation sequences step by step. A relationship between findings does not by itself establish an exploitable chain; generated scenarios must be labelled as potential and subject to validation.
 
