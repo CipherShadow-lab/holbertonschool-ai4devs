@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/images/FAULTINE-APIPROTOTYPING.png" alt="FAULT//INE — ATTACK CHAINS DECODED — API PROTOTYPING" width="100%" />
+  <img src="/Images/FAULTINE-APIPROTOTYPING.png" alt="FAULTLINE — ATTACK CHAINS DECODED — API PROTOTYPING" width="100%" />
 </p>FAULT//INE — API Prototyping
 
 ## Purpose  
@@ -38,7 +38,7 @@ The FAULT//INE API prototype focuses on defining a structured, secure interface 
   
 **Agreed upload validation**: Accept `.py` files only; reject empty files; enforce a maximum of 5 MB per file. Treat uploaded code as untrusted data and do not execute it during ingestion. File-size limits are prototype constraints, not a statement about all future versions.
 <br>
-
+  
 ## Scope Exclusions  
 
 The following capabilities are intentionally excluded from the initial API prototype to maintain a focused, achievable MVP.  
@@ -53,7 +53,7 @@ The following capabilities are intentionally excluded from the initial API proto
 | CI/CD integration | Avoids introducing pipeline dependencies during API prototyping. |
 | Production-grade AI analysis | Keeps the prototype focused on API design rather than implementing a complete detection engine. |  
 <br>
-
+  
 ## Design rationale  
 
 The Node Map is an interactive visualisation of findings and their potential relationships, rather than a separate CRUD resource. The Attack Chain view explains selected potential exploitation sequences step by step. A relationship between findings does not by itself establish an exploitable chain; generated scenarios must be labelled as potential and subject to validation.
@@ -64,7 +64,7 @@ Projects are suitable for conventional CRUD operations. Scanner-produced finding
   
 The backend framework, precise endpoint paths and schemas, supported scan/detection patterns, JWT issuance and expiry, rate-limit policy, latency targets, source-code retention and deletion rules, and whether analysis uses mock results or an integrated scanner have not yet been agreed. These must be decided explicitly before the corresponding specification details are finalised.
 <br>
-
+  
 ## Deliverables  
 
 - README.md — scope, exclusions, and design rationale (this document).
