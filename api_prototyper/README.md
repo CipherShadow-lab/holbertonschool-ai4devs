@@ -6,6 +6,7 @@
   />
 </p>
 <br>
+<br>
 ## Purpose  
   
 FAULT//INE is a developer-focused application security concept that aims to help users understand potential vulnerabilities in source code, how those weaknesses may relate and how they could contribute to attack paths. This part of the project establishes an initial API contract supporting that workflow and is **not** a claim that a production-grade scanner or exploit-validation engine has been implemented.
