@@ -19,7 +19,9 @@ FAULT//INE is a developer-focused application security concept that aims to help
 
 ## Target Users  
 
-**Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
+**Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code.   
+  
+**Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
 <br>
   
 ## Agreed MVP Scope  
