@@ -5,7 +5,7 @@
     width="100%"
   />
 </p>
-  
+<br>
 ## Purpose  
   
 FAULT//INE is a developer-focused application security concept that aims to help users understand potential vulnerabilities in source code, how those weaknesses may relate and how they could contribute to attack paths. This part of the project establishes an initial API contract supporting that workflow and is **not** a claim that a production-grade scanner or exploit-validation engine has been implemented.
@@ -15,7 +15,6 @@ FAULT//INE is a developer-focused application security concept that aims to help
 - `api_requirements.md` defines the intended behaviour and constraints 
 - `api_specification.yaml` and `api_specification.json` will express the same interface in OpenAPI 3.0 format.
 <br>
-
 ## Target users  
 
 **Primary users**: Software developers who need to identify, understand and remediate potential vulnerabilities in their application source code. **Supporting users**: Security professionals who may assist with reviewing findings, interpreting potential attack chains and advising on remediation when additional expertise is needed.  
