@@ -1,5 +1,3 @@
-# API Requirements – FAULT//INE Source-Code Security Analysis API
-  
 <p align="center">
   <img
     src="/Images/FAULTLINE-APIARCITECTURE.png"
@@ -8,9 +6,11 @@
   />
 </p>
 <br>
+
+# API Requirements – FAULT//INE Source-Code Security Analysis API
   
 ## Domain  
-
+  
 Developer-focused application security analysis API for managing Python source-code projects, initiating vulnerability scans and retrieving security findings and potential attack-chain data for visualisation and remediation.
 
 ## Target Users  
