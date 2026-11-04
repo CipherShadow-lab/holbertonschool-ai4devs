@@ -2,7 +2,7 @@
   
 <p align="center">
   <img
-    src="/Images/FAULTLINE-APIARCHITECTURE.png"
+    src="/Images/FAULTLINE-APIARCITECTURE.png"
     alt="FAULT//INE — API ARCHITECTURE"
     width="100%"
   />
