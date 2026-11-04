@@ -5,7 +5,6 @@
     width="100%"
   />
 </p>
-<br>
 
 # API Requirements – FAULT//INE Source-Code Security Analysis API
   
