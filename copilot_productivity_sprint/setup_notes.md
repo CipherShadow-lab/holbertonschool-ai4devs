@@ -1,4 +1,4 @@
-# GitHub Copilot Productivity Sprint — Environment Setup
+# GitHub Copilot Productivity Sprint - Environment Setup
 
 ## 1. Objective
 
