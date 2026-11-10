@@ -1,0 +1,24 @@
+# Project-level reference policy for the Holberton exercise.
+# This file is NOT a native GitHub Copilot settings file.
+# Operational instructions are in .github/copilot-instructions.md
+# and .github/prompts/code-review.prompt.md.
+languages:
+  python:
+    style_guide: black
+    type_hints: true
+    linting: ruff
+  javascript:
+    style_guide: eslint
+    formatter: prettier
+    semicolons: true
+workflows:
+  code_review:
+    enabled: true
+    focus_areas:
+      - security
+      - correctness
+      - maintainability
+    prompt_file: .github/prompts/code-review.prompt.md
+assistant:
+  primary: github_copilot
+  external_support: chatgpt
