@@ -69,4 +69,4 @@ This is a **static, historical codebase overview**, not a penetration test or a 
 5. Make WordPress Hosting, [Historical server requirements](https://make.wordpress.org/hosting/handbook/compatibility/).
 6. Make WordPress Core, [PHP compatibility and WordPress versions](https://make.wordpress.org/core/handbook/references/php-compatibility-and-wordpress-versions/).
 
-> **Verification note:** LOC measurements were calculated directly from the supplied WordPress 5.8 ZIP. Security and compatibility claims should continue to be checked against the linked official advisories and documentation.
+> **Verification note:** LOC measurements were calculated directly from the obtained WordPress 5.8 ZIP. Security and compatibility claims should continue to be checked against the linked official advisories and documentation.
