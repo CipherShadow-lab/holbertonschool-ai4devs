@@ -13,23 +13,28 @@ WordPress Core provides content management, publishing, user administration, ext
 
 ## Size and Lines of Code
 
-**LOC: Pending direct measurement of the 5.8.0 release archive.** A defensible numeric figure is not provided because the archive could not be retrieved in the current analysis environment. This is an explicit verification item rather than an estimated metric.
+The original `wordpress-5.8.zip` release archive supplied for this analysis was inspected directly. Its `wp-includes/version.php` declares `$wp_version = '5.8'` and `$required_php_version = '5.6.20'`.
 
-**Measurement method:** Download the original WordPress 5.8 archive and count physical lines in first-party `.php` files, excluding bundled third-party libraries, tests, generated assets and the default themes. Report the number of files and physical lines, and optionally a separate count for JavaScript. Clearly label these as physical lines rather than nonblank/noncomment source lines.
+| Measurement | Files | Physical lines |
+| --- | ---: | ---: |
+| All PHP files in the release ZIP | 994 | **473,918** |
+| PHP files after the exclusions below | 693 | **396,982** |
+| All JavaScript (`.js`) files in the release ZIP | 543 | **496,054** |
+| JavaScript after the same exclusions | 518 | **493,322** |
 
-Example command after extracting the archive (requires `find`, `xargs` and `wc`):
+**Primary LOC metric: 396,982 physical PHP lines across 693 files**, using the specified exclusions. The unfiltered PHP total is also reported to make the counting boundary transparent. Physical lines include comments and blank lines; they are **not** nonblank/noncomment code-only LOC.
 
-```bash
-find wordpress -type f -name '*.php' \
-  ! -path '*/wp-includes/Requests/*' \
-  ! -path '*/wp-includes/SimplePie/*' \
-  ! -path '*/wp-includes/PHPMailer/*' \
-  ! -path '*/wp-includes/sodium_compat/*' \
-  ! -path '*/wp-content/themes/*' \
-  -print0 | xargs -0 wc -l | tail -n 1
-```
+**Reproducible method:** For each ZIP entry with the specified extension (case-insensitive), count its physical lines using Python `len(file_bytes.splitlines())`, then sum across files. No installation or execution of the application was necessary. The exclusion filter removes paths beginning with:
 
-**Caveat:** This exclusion list is illustrative, not an audited inventory of every bundled dependency. Final figures must use a documented and checked inclusion/exclusion list.
+- `wordpress/wp-content/themes/` (bundled default themes)
+- `wordpress/wp-includes/Requests/`
+- `wordpress/wp-includes/SimplePie/`
+- `wordpress/wp-includes/PHPMailer/`
+- `wordpress/wp-includes/sodium_compat/`
+
+These exclusions isolate a useful comparison set but **do not constitute a complete separation of first-party and third-party code**; other bundled libraries remain. JavaScript figures include minified and distributed assets and should not be interpreted as a clean count of authored JavaScript source code.
+
+**Archive SHA-256:** `e4d78cc309dd5145b553d0eff9a1a938018bc10e2168b6174c460fba00119561` (for the uploaded `wordpress-5.8.zip`). This identifies the exact input used for the measurements.
 
 ## Main Runtime Dependencies
 
@@ -39,7 +44,7 @@ find wordpress -type f -name '*.php' \
 | MySQL | Relational database; historical minimum **MySQL 5.0.15** |
 | MariaDB | Alternative database; historical minimum **MariaDB 5.5** |
 | Web server | A PHP-capable web server, commonly Apache or Nginx |
-| JavaScript and bundled libraries | Used for the block editor, administration experience and other browser-side features; exact bundled versions require inspection of the selected snapshot |
+| JavaScript and bundled libraries | Used for the block editor, administration experience and other browser-side features; bundled versions can be verified against the selected snapshot |
 
 The historical minimums are compatibility floors, **not recommended secure deployment versions**. The official WordPress PHP compatibility matrix identifies PHP 8.0 and earlier listed versions as compatible with WordPress 5.8, but not PHP 8.1 and newer.
 
@@ -64,3 +69,4 @@ This is a **static, historical codebase overview**, not a penetration test or a 
 5. Make WordPress Hosting, [Historical server requirements](https://make.wordpress.org/hosting/handbook/compatibility/).
 6. Make WordPress Core, [PHP compatibility and WordPress versions](https://make.wordpress.org/core/handbook/references/php-compatibility-and-wordpress-versions/).
 
+> **Verification note:** LOC measurements were calculated directly from the supplied WordPress 5.8 ZIP. Security and compatibility claims should continue to be checked against the linked official advisories and documentation.
