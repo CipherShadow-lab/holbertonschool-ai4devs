@@ -64,4 +64,3 @@ This is a **static, historical codebase overview**, not a penetration test or a 
 5. Make WordPress Hosting, [Historical server requirements](https://make.wordpress.org/hosting/handbook/compatibility/).
 6. Make WordPress Core, [PHP compatibility and WordPress versions](https://make.wordpress.org/core/handbook/references/php-compatibility-and-wordpress-versions/).
 
-> **Completion check:** Replace the pending LOC field with a measured value from the original archive before submitting Task 0.
