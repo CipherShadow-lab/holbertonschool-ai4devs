@@ -2,26 +2,27 @@
 
 ## Project Overview
 
-This Holberton School exercise explores how AI assistance can be incorporated into an IDE-based development workflow.
+This project explores how AI assistance can be integrated into an IDE-based development workflow. It comprises two tasks:
 
-It comprises two tasks:
-
-- **Task 0 - Document Current Workflow:** Define an initial development environment, identify workflow pain points and establish baseline productivity metrics in [`workflow_baseline.md`](workflow_baseline.md).  
-
-- **Task 1 - Configure AI Assistant:** Document AI-assisted IDE settings in `ai_config.md` and provide configuration files covering language-specific rules and at least one specialized AI workflow.
+- **Task 0 - Document Current Workflow:** Define an initial development environment, identify workflow pain points and establish baseline productivity metrics in [`workflow_baseline.md`](workflow_baseline.md).
+- **Task 1 - Configure AI Assistant:** Document AI-assisted IDE settings in `ai_config.md` and provide configuration files with language-specific rules and at least one specialised AI workflow.
 
 ## Approach and Assumptions
 
-The starting point for this exercise is **Visual Studio Code with ChatGPT used externally for development support**, rather than a previously established and instrumented IDE workflow. To make the assignment practical and reproducible, Task 0 uses a **representative Python/JavaScript developer scenario** that includes commonly used VS Code extensions, Git and GitHub.
+To establish a consistent and reproducible baseline, this project adopts a **representative Python/JavaScript development environment** using Visual Studio Code, commonly used extensions, Git and GitHub.
 
-These representative components are **scenario assumptions**; they are not claims that every extension or tool is currently installed. The productivity values in `workflow_baseline.md` are **illustrative estimates**, not personally measured results or published industry averages.
+The baseline provides a structured reference for identifying workflow inefficiencies and evaluating the integration of AI-assisted development tools. The tools and extensions described in the reference scenario are **assumptions**, not verified installations. Productivity metrics are **illustrative estimates** rather than historical measurements or published industry averages.
 
 ## AI Integration Strategy
 
-For Task 1, **GitHub Copilot** is the planned primary AI assistant integrated with VS Code. **ChatGPT** remains an external support tool for explaining concepts, exploring alternatives and reviewing development decisions. Configuration documentation will distinguish proposed settings from any settings actually applied or tested.
+For Task 1, **GitHub Copilot** is the planned primary AI assistant integrated with VS Code. **ChatGPT** serves as an external development support tool for explaining concepts, exploring alternatives and reviewing development decisions.
+
+The configuration documentation will distinguish proposed settings from those actually applied or tested. This ensures the exercise remains technically transparent without overstating the extent of implementation.
 
 ## Evaluation and Limitations
 
-The baseline identifies three potential sources of inefficiency: context switching, manual testing/debugging, and repetitive documentation. Its metrics provide a framework for later comparison, but **configuring an assistant alone does not establish a productivity gain**. Any improvement claim would require actual timed work, comparable tasks, and recorded observations before and after integration.
+The baseline highlights three potential workflow inefficiencies: context switching, manual testing and debugging and repetitive documentation updates. Its metrics establish reference points for future comparison, but **configuring an AI assistant does not by itself demonstrate a productivity improvement**.
 
-This README documents the methodology for the **entire two-task project**, while the task-specific Markdown files contain the required deliverables.
+Any subsequent claims of improvement would require comparable development tasks, consistent measurement methods and recorded results before and after integration.
+
+This README explains the methodology for the **two-task project**. The task-specific files contain the detailed deliverables required by Holberton.
