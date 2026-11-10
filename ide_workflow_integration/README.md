@@ -6,9 +6,9 @@ This Holberton School exercise explores how AI assistance can be incorporated in
 
 It comprises two tasks:
 
-- **Task 0 — Document Current Workflow:** Define an initial development environment, identify workflow pain points and establish baseline productivity metrics in [`workflow_baseline.md`](workflow_baseline.md).  
+- **Task 0 - Document Current Workflow:** Define an initial development environment, identify workflow pain points and establish baseline productivity metrics in [`workflow_baseline.md`](workflow_baseline.md).  
 
-- **Task 1 — Configure AI Assistant:** Document AI-assisted IDE settings in `ai_config.md` and provide configuration files covering language-specific rules and at least one specialized AI workflow.
+- **Task 1 - Configure AI Assistant:** Document AI-assisted IDE settings in `ai_config.md` and provide configuration files covering language-specific rules and at least one specialized AI workflow.
 
 ## Approach and Assumptions
 
