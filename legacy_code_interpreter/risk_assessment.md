@@ -4,7 +4,12 @@
 
 This assessment covers the **original WordPress Core 5.8.0 release (20 July 2021)** from the supplied `wordpress-5.8.zip` archive. It builds on `codebase_overview.md` and the four source-level analyses in `ai_explanations.md`. It does **not** assess a currently patched WordPress installation, third-party plugins or themes, or a live deployment.
 
-**Severity criteria:** **High** indicates potentially significant confidentiality, integrity or access-control impact, or a serious obstacle to secure operation. **Medium** indicates a meaningful compatibility, reliability or maintainability concern requiring planned mitigation. **Low** indicates limited impact or a concern manageable through routine maintenance. Ratings are qualitative and reflect potential impact plus the available evidence, not a measured exploit likelihood. **Documented** means supported by a published WordPress advisory or compatibility reference; **Architectural** means a risk inferred from inspected code and its maintenance implications, **not a confirmed vulnerability**.
+**Severity criteria:** 
+- **High** indicates potentially significant confidentiality, integrity or access-control impact, or a serious obstacle to secure operation.  
+- **Medium** indicates a meaningful compatibility, reliability or maintainability concern requiring planned mitigation.  
+- **Low** indicates limited impact or a concern manageable through routine maintenance.  
+
+Ratings are qualitative and reflect potential impact plus the available evidence, not a measured exploit likelihood. **Documented** means supported by a published WordPress advisory or compatibility reference; **Architectural** means a risk inferred from inspected code and its maintenance implications, **not a confirmed vulnerability**.
 
 ## Prioritised Risk Table
 
