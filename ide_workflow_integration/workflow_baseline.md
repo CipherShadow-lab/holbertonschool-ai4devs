@@ -2,21 +2,21 @@
 
 ## Baseline Context
 
-This document establishes a **representative pre-integration development baseline** for the IDE Workflow Integration exercise. It combines the existing use of Visual Studio Code and external ChatGPT assistance with a clearly defined, illustrative Python/JavaScript developer workflow. The additional tools and productivity figures below are **scenario assumptions**, not verified personal usage or historical measurements.
+This document establishes a **representative productivity baseline** for a Python/JavaScript development workflow using Visual Studio Code. It outlines the development environment, identifies common workflow inefficiencies and defines illustrative productivity metrics to support the evaluation of AI-assisted IDE integration. The scenario components and figures are **assumptions**, not verified installations or historical measurements.
 
 ## Current IDE Setup
 
 - **Editor:** Visual Studio Code (VS Code), using a current stable release; no specific version is assumed.
-- **Existing external AI support:** ChatGPT, accessed separately from the IDE for explanations, troubleshooting and development guidance.
+- **External AI support:** ChatGPT, accessed separately from the IDE for explanations, troubleshooting and development guidance (reference workflow).
 - **Representative development languages:** Python and JavaScript.
-- **Representative editor extensions:** Microsoft Python, Pylance, ESLint and Prettier (proposed scenario components; installation not verified).
-- **Representative developer tools:** VS Code integrated terminal, Git and GitHub (scenario components; installation and usage not verified).
+- **Representative editor extensions:** Microsoft Python, Pylance, ESLint and Prettier (reference scenario; installation not verified).
+- **Representative developer tools:** VS Code integrated terminal, Git and GitHub (reference scenario; installation not verified).
 - **Typical reference workflow:** Read a task, edit code in VS Code, consult external documentation or ChatGPT, run checks manually in the terminal, review changes and commit through Git.
 - **IDE-integrated AI assistant:** Not part of the baseline. GitHub Copilot is the **planned primary assistant** for Task 1.
 
 ## Pain Points
 
-1. **Context switching:** Moving between VS Code, documentation, and external AI support requires copying code and error messages between tools, interrupting development flow.
+1. **Context switching:** Moving between VS Code, documentation and external AI support requires copying code and error messages between tools, interrupting development flow.
 2. **Manual testing and debugging:** Re-running checks, interpreting failures and tracing errors without a streamlined automated workflow increases turnaround time.
 3. **Repetitive documentation:** Updating README files, comments and developer notes manually can consume time and create inconsistencies with code changes.
 
