@@ -2,11 +2,11 @@
 
 Security-focused debugging exercise for Holberton AI-assisted development coursework.
 
-- **Task 0**: `bug_snippets/` contains five intentionally flawed source files; `bug_descriptions.md` documents intended behavior and observed weaknesses.  
+- **Task 0**: `bug_snippets/` contains five intentionally flawed source files; `bug_descriptions.md` documents intended behaviour and observed weaknesses.  
   
-- **Task 1**: Record AI-assisted diagnosis in `ai_debug_log.md` (to be created during Task 1).  
+- **Task 1**: Record AI-assisted diagnosis in `ai_debug_log.md` (created in Task 1).  
   
-- **Task 2**: Add corrected versions under `bug_fixes/` and record executed tests in `fix_validation.md` (to be created during Task 2).  
+- **Task 2**: Add corrected versions under `bug_fixes/` and record executed tests in `fix_validation.md` (created in Task 2).  
 
 ## Local Checks
 
@@ -16,4 +16,4 @@ Security-focused debugging exercise for Holberton AI-assisted development course
   
 The XSS example requires a browser DOM or a test double to exercise `renderProfile`; running its file with Node.js alone checks that it loads without executing browser code.  
 
-**The snippets are intentionally insecure and must NOT be used in production.**  
+**The snippets are intentionally insecure and must NOT be used i a Production envrionment.**  
