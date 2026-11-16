@@ -1,0 +1,6 @@
+{
+  "nodes": ["WEB", "APP", "AUTH", "DB"],
+  "edges": [["WEB", "AUTH"], ["WEB", "APP"], ["AUTH", "DB"], ["APP", "DB"]],
+  "start": "WEB",
+  "target": "DB"
+}
