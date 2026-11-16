@@ -38,17 +38,24 @@ Invalid input: `{"error": {"code": "ERROR_CODE", "message": "Exact message."}}`.
 
 Return the **first** applicable error in this sequence:
 
-1. Unparseable JSON → `INVALID_JSON`: `Input is not valid JSON.`  
+1. Unparseable JSON → `INVALID_JSON`: `Input is not valid JSON.`
+
 2. Top-level value not a JSON object → `INVALID_INPUT`: `Input must be a JSON object.`  
+
 3. Missing required keys, checked in order `nodes`, `edges`, `start`, `target` → `MISSING_FIELD`: `Missing required field: <key>.`  
+
 4. Any extra top-level key → `INVALID_INPUT`: `Unexpected top-level field.`  
+
 5. `nodes` not an array or empty → `INVALID_NODES`: `Nodes must be a non-empty array.`  
+
 6. Each node in array order: invalid identifier → `INVALID_NODE_NAME`: `Node names must contain only ASCII letters, digits and underscores.`; repeated identifier → `DUPLICATE_NODE`: `Node names must be unique.`  
+
 7. `edges` not an array → `INVALID_EDGES`: `Edges must be an array.`  
+
 8. Each edge in array order: not a two-item array → `INVALID_EDGE`: `Each edge must contain exactly two node names.`; invalid endpoint identifier → `INVALID_NODE_NAME` (same message as above); unknown endpoint → `UNKNOWN_EDGE_NODE`: `Edge references an unknown node.`  
 9. `start`, then `target`: invalid identifier → `INVALID_NODE_NAME` (same message); identifier absent from nodes → `UNKNOWN_NODE`: `Start or target node does not exist.`  
 
-No implicit type conversion or case normalisation. JSON booleans and numbers are not valid identifiers. Error messages and codes are fixed for cross-language equivalence.
+No implicit type conversion or case normalisation. JSON booleans and numbers are not valid identifiers. Error messages and codes are fixed for cross-language equivalence.  
 
 ## Edge Cases
 
