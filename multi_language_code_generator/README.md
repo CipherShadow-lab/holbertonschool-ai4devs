@@ -2,7 +2,7 @@
 
 A small, deterministic graph-search project inspired by the proposed **FAULT//INE** cybersecurity application and its vision of visualising relationships between systems and potential exposure paths.
 
-## What this project does
+## About this Project  
 
 Given a **predefined directed graph** of systems and connections, the program uses **Breadth-First Search (BFS)** to find a path with the fewest hops from a start node to a target node. It explores neighbouring nodes in ascending ASCII order so equal-length paths produce the same answer across languages.
 
@@ -10,7 +10,7 @@ Given a **predefined directed graph** of systems and connections, the program us
 
 This is **connectivity analysis**, not proof of an exploitable attack chain. A connection alone does not establish vulnerability, access permissions or exploitability.
 
-## Input and output
+## Input and Output
 
 Supply one JSON document as a file:
 
@@ -31,7 +31,7 @@ Expected output:
 
 If no path exists, the program returns `{"path": [], "hops": null}`. Invalid requests return a structured `error` object. See [cross_language_spec.md](cross_language_spec.md) for the exact contract.
 
-## Run the Python reference
+## Run the Python Reference
 
 Requires Python 3.9+ and no third-party packages. From this project directory:
 
@@ -54,7 +54,7 @@ A **graph-building component** would verify and transform those relationships in
 
 Discovery, scanning, vulnerability assessment, exploit validation and user-interface development are **out of scope** here. Keeping these responsibilities separate makes the BFS algorithm reproducible, testable and straightforward to translate.
 
-## Cross-language plan
+## Cross-language Plan
 
 1. **Task 0:** Specify the algorithm, JSON contract, edge cases and test vectors in `cross_language_spec.md`.
 2. **Task 1:** Build and test the Python reference implementation in `reference/`.
