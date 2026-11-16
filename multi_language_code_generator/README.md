@@ -6,7 +6,7 @@ A small, deterministic graph-search project inspired by the proposed **FAULT//IN
 
 Given a **predefined directed graph** of systems and connections, the program uses **Breadth-First Search (BFS)** to find a path with the fewest hops from a start node to a target node. It explores neighbouring nodes in ascending ASCII order so equal-length paths produce the same answer across languages.
 
-**BFS in plain English:** start at one system, examine its immediate neighbours, then their neighbours, level by level. A queue keeps track of which system to explore next. A visited set prevents loops. When the target is found, parent links reconstruct the path.
+**BFS Explained:** start at one system, examine its immediate neighbours, then their neighbours, level by level. A queue keeps track of which system to explore next. A visited set prevents loops. When the target is found, parent links reconstruct the path.
 
 This is **connectivity analysis**, not proof of an exploitable attack chain. A connection alone does not establish vulnerability, access permissions or exploitability.
 
@@ -42,11 +42,13 @@ python -m unittest discover -s reference/tests -v
 
 The command reads the supplied JSON file and prints one JSON response to standard output. Invalid input also produces JSON and exits with status 1.
 
-## Why FAULT//INE inspired this project
+## FAULT//INE - Project Inspiration
 
 FAULT//INE is a **proposed** security-analysis application intended to help developers and security professionals understand weaknesses, system relationships and potential attack chains. This coursework explores one reusable building block of that broader concept, not a complete FAULT//INE feature.
 
-In a future authorised environment, a **separate discovery component** might identify systems and collect evidence of their connectivity through approved inventories, configuration data, APIs or scoped network observations. A **graph-building component** would verify and transform those relationships into directed nodes and edges. The BFS component could then identify possible connection paths, and FAULT//INE's interface could visualise them for further investigation.
+In a future authorised environment, a **separate discovery component** might identify systems and collect evidence of their connectivity through approved inventories, configuration data, APIs or scoped network observations. 
+
+A **graph-building component** would verify and transform those relationships into directed nodes and edges. The BFS component could then identify possible connection paths, and FAULT//INE's interface could visualise them for further investigation.
 
 **Potential future flow:** authorised discovery → verified graph construction → BFS path analysis → FAULT//INE visualisation.
 
