@@ -4,7 +4,7 @@
 
 Implement deterministic **Breadth-First Search (BFS)** on a **directed, unweighted graph** to find a path with the fewest edges (hops) between a designated start and target. This is a graph-connectivity demonstration, not vulnerability scanning or exploit validation.
 
-## Input contract
+## Input Contract
 
 Input is one UTF-8 JSON object with **exactly** these four required keys (additional keys are invalid):
 
@@ -26,7 +26,7 @@ Each identifier is a non-empty JSON string matching `^[A-Za-z0-9_]+$`. Names are
 
 `start == target` produces a one-node path and zero hops. Expected time complexity after adjacency preparation: `O(V + E)` for BFS; sorting neighbours adds ordering overhead. Expected memory: `O(V + E)` including adjacency storage.
 
-## Output contract
+## Output Contract
 
 Success: `{"path": ["A", "B"], "hops": 1}`. `path` contains identifiers in traversal order, including both endpoints. `hops` is `len(path) - 1`.
 
@@ -34,23 +34,23 @@ Unreachable target: `{"path": [], "hops": null}`.
 
 Invalid input: `{"error": {"code": "ERROR_CODE", "message": "Exact message."}}`. Errors have no `path` or `hops` fields. For the CLI, print the response as JSON and exit 1 for errors (0 for valid searches).
 
-## Validation and error precedence
+## Validation and Error Precedence
 
 Return the **first** applicable error in this sequence:
 
-1. Unparseable JSON → `INVALID_JSON`: `Input is not valid JSON.`
-2. Top-level value not a JSON object → `INVALID_INPUT`: `Input must be a JSON object.`
-3. Missing required keys, checked in order `nodes`, `edges`, `start`, `target` → `MISSING_FIELD`: `Missing required field: <key>.`
-4. Any extra top-level key → `INVALID_INPUT`: `Unexpected top-level field.`
-5. `nodes` not an array or empty → `INVALID_NODES`: `Nodes must be a non-empty array.`
-6. Each node in array order: invalid identifier → `INVALID_NODE_NAME`: `Node names must contain only ASCII letters, digits and underscores.`; repeated identifier → `DUPLICATE_NODE`: `Node names must be unique.`
-7. `edges` not an array → `INVALID_EDGES`: `Edges must be an array.`
-8. Each edge in array order: not a two-item array → `INVALID_EDGE`: `Each edge must contain exactly two node names.`; invalid endpoint identifier → `INVALID_NODE_NAME` (same message as above); unknown endpoint → `UNKNOWN_EDGE_NODE`: `Edge references an unknown node.`
-9. `start`, then `target`: invalid identifier → `INVALID_NODE_NAME` (same message); identifier absent from nodes → `UNKNOWN_NODE`: `Start or target node does not exist.`
+1. Unparseable JSON → `INVALID_JSON`: `Input is not valid JSON.`  
+2. Top-level value not a JSON object → `INVALID_INPUT`: `Input must be a JSON object.`  
+3. Missing required keys, checked in order `nodes`, `edges`, `start`, `target` → `MISSING_FIELD`: `Missing required field: <key>.`  
+4. Any extra top-level key → `INVALID_INPUT`: `Unexpected top-level field.`  
+5. `nodes` not an array or empty → `INVALID_NODES`: `Nodes must be a non-empty array.`  
+6. Each node in array order: invalid identifier → `INVALID_NODE_NAME`: `Node names must contain only ASCII letters, digits and underscores.`; repeated identifier → `DUPLICATE_NODE`: `Node names must be unique.`  
+7. `edges` not an array → `INVALID_EDGES`: `Edges must be an array.`  
+8. Each edge in array order: not a two-item array → `INVALID_EDGE`: `Each edge must contain exactly two node names.`; invalid endpoint identifier → `INVALID_NODE_NAME` (same message as above); unknown endpoint → `UNKNOWN_EDGE_NODE`: `Edge references an unknown node.`  
+9. `start`, then `target`: invalid identifier → `INVALID_NODE_NAME` (same message); identifier absent from nodes → `UNKNOWN_NODE`: `Start or target node does not exist.`  
 
 No implicit type conversion or case normalisation. JSON booleans and numbers are not valid identifiers. Error messages and codes are fixed for cross-language equivalence.
 
-## Edge cases
+## Edge Cases
 
 - No route and disconnected nodes return `path: []` and `hops: null`.
 - Start equal to target returns `[start]` and `0`.
@@ -59,7 +59,7 @@ No implicit type conversion or case normalisation. JSON booleans and numbers are
 - Duplicate edges are ignored; unordered input edges still yield the same path.
 - Empty graphs, unknown nodes, malformed input and invalid edge shapes return structured errors.
 
-## Test vectors (12 required scenarios)
+## Test Vectors (12 Required Scenarios)
 
 Each vector below uses the exact input/output contract; `E` abbreviates `edges` and `N` abbreviates `nodes` **only in this table**, not in actual JSON.
 
@@ -78,12 +78,13 @@ Each vector below uses the exact input/output contract; `E` abbreviates `edges` 
 | 11 | Unknown target | A | (none) | A→Z | `UNKNOWN_NODE` error |
 | 12 | Empty graph | (none) | (none) | A→B | `INVALID_NODES` error |
 
+<br>
 For vectors 11 and 12, the complete expected error objects are respectively `{"error":{"code":"UNKNOWN_NODE","message":"Start or target node does not exist."}}` and `{"error":{"code":"INVALID_NODES","message":"Nodes must be a non-empty array."}}`.
 
-## Implementation and equivalence
+## Implementation and Equivalence
 
 Python is the reference language; JavaScript and Go translations must produce semantically identical JSON values for the same input, including exact paths, hop counts and error codes/messages. JSON object key order and insignificant whitespace are not significant. All implementations must apply the same validation precedence and ASCII ordering.
 
-## Scope exclusions
+## Scope Exclusions
 
 No active network scanning, data collection, vulnerability verification, exploit simulation, risk scoring, persistent storage or UI. Any future FAULT//INE integration would require a separate authorised discovery and graph-building stage.
